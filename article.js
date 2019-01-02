@@ -14,6 +14,16 @@ $(document).ready(function(){
     $('._container').removeClass('fixed_container');
   });
 
+  //xu ly form sub
+  $('#subscribe_form').click(function(){
+    $('.form_sub').addClass('active_form_sub');
+    $('._container').addClass('fixed_container');
+  });
+  $('#form_sub_icon').click(function(){
+    $('.form_sub').removeClass('active_form_sub');
+    $('._container').removeClass('fixed_container');
+  });
+  //end xu ly form search
   // (*** Xu Ly Backtotop article ***)
   window.addEventListener('scroll', function(){
     if($(window).scrollTop() > 180){
