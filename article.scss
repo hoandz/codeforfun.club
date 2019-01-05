@@ -647,6 +647,9 @@ html,body{
     position: absolute;
     opacity: 0;
     transition: 0.3s;
+    @media only screen and (max-width: 836px){
+        display: none;
+    }
     iframe{
       top: 50%;
       left: 50%;

@@ -266,6 +266,9 @@ html,body{
   .links-and-stats{
     padding-top: 145px;
     margin-bottom: 35px;
+    @media only screen and (max-width: 768px){
+        padding: 50px 13px 0px;
+    }
     .dia_diem{
       color: #628499;
       text-align: center;
@@ -276,8 +279,8 @@ html,body{
       text-align: center;
       width: 500px;
       margin: 0 auto;
-      @media only screen and (max-width: 560px){
-        width: 80%;
+      @media only screen and (max-width: 768px){
+        width: 100%;
         font-size: 12px;
       }
     }
@@ -549,6 +552,9 @@ html,body{
     position: absolute;
     opacity: 0;
     transition: 0.3s;
+    @media only screen and (max-width: 836px){
+        display: none;
+    }
     iframe{
       top: 50%;
       left: 50%;
