@@ -69,4 +69,35 @@ $(document).ready(function(){
     $('._container').removeClass('fixed_container');
   });
   //end xu ly form search
+
+  //xu ly menu about me
+  $('.tab_menu_about ul li').click(function(){
+    $('.tab_menu_about ul li').removeClass('active_border');
+    $(this).addClass('active_border');
+  });
+
+  //xu ly phan about_container
+  $('#about_container').click(function(){
+    $('.about_personal').removeClass('active_about');
+    $('.about_project').removeClass('active_about');
+    $('.about_container').addClass('active_about')
+  })
+  //end xu ly phan about_container
+  //xu ly phan about_personal
+  $('#about_personal').click(function(){
+    $('.about_personal').addClass('active_about');
+    $('.about_project').removeClass('active_about');
+    $('.about_container').removeClass('active_about')
+  })
+  //end xu ly phan about_personal
+  //xu ly phan about_project
+  $('#about_project').click(function(){
+    $('.about_personal').removeClass('active_about');
+    $('.about_project').addClass('active_about');
+    $('.about_container').removeClass('active_about')
+  })
+  //end xu ly phan about_project
+
+
+  //end xu ly menu about me
 });
