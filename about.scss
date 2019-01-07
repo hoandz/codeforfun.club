@@ -269,6 +269,10 @@ html,body{
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+    @media only screen and (max-width: 836px){
+        width: 95%;
+        height: 950px;
+    }
     .tab_menu_about{
       ul{
       margin: 0;
