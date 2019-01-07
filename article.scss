@@ -554,6 +554,51 @@ html,body{
       }
     }
   }
+  .form_search{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(51, 49, 69, 0.87) 0%, #b8333e 100%);
+    z-index: 10000;
+    position: absolute;
+    transform: translateX(100%);
+    top: 0;
+    transition: 0.2s;
+    visibility: hidden;
+    &.active_form_search{
+      transform: translateX(0%);
+      position: fixed;
+      visibility: visible;
+    }
+    i{
+      float: right;
+      color: white;
+      padding: 12px 12px;
+      font-size: 20px;
+    }
+    h5{
+      margin-top: 75px;
+      text-align: center;
+      color: white;
+      font-size: 15px;
+      opacity: 0.7;
+    }
+    input{
+      background: none;
+      width: 0%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border: none;
+      border-bottom: 1px solid #afadad;
+      color: white;
+      &:focus{
+        outline: none;
+      }
+      &.active_input_form{
+        animation: inputChayra 0.6s forwards;
+      }
+    }
+  }
 }
 .nav_menu_mobile{
   width: 100%;
@@ -633,6 +678,10 @@ html,body{
         opacity: 0.8;
         &:hover{
           opacity: 1;
+        }
+        a{
+          text-decoration: none;
+          color: white;
         }
       }
     }
@@ -831,4 +880,12 @@ html,body{
 .active{
   /*Thay đổi giá trị translateY*/
     transform: translateY(105px) !important;
+}
+@keyframes inputChayra{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
 }

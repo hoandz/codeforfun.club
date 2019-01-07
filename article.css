@@ -507,6 +507,50 @@ html, body {
                 padding: 0px 2px; } }
             ._container .footer .site-footer .site-footer-right ul li:hover {
               opacity: 1; }
+  ._container .form_search {
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 49, 69, 0.87)), to(#b8333e));
+    background: linear-gradient(to bottom, rgba(51, 49, 69, 0.87) 0%, #b8333e 100%);
+    z-index: 10000;
+    position: absolute;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    top: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    visibility: hidden; }
+    ._container .form_search.active_form_search {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      position: fixed;
+      visibility: visible; }
+    ._container .form_search i {
+      float: right;
+      color: white;
+      padding: 12px 12px;
+      font-size: 20px; }
+    ._container .form_search h5 {
+      margin-top: 75px;
+      text-align: center;
+      color: white;
+      font-size: 15px;
+      opacity: 0.7; }
+    ._container .form_search input {
+      background: none;
+      width: 0%;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      border: none;
+      border-bottom: 1px solid #afadad;
+      color: white; }
+      ._container .form_search input:focus {
+        outline: none; }
+      ._container .form_search input.active_input_form {
+        -webkit-animation: inputChayra 0.6s forwards;
+                animation: inputChayra 0.6s forwards; }
 
 .nav_menu_mobile {
   width: 100%;
@@ -583,6 +627,9 @@ html, body {
         opacity: 0.8; }
         .nav_menu_mobile .menu_main_menu_mobile ul li:hover {
           opacity: 1; }
+        .nav_menu_mobile .menu_main_menu_mobile ul li a {
+          text-decoration: none;
+          color: white; }
 
 .form_contact {
   width: 100%;
@@ -786,5 +833,17 @@ html, body {
   /*Thay đổi giá trị translateY*/
   -webkit-transform: translateY(105px) !important;
           transform: translateY(105px) !important; }
+
+@-webkit-keyframes inputChayra {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+@keyframes inputChayra {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
 
 /*# sourceMappingURL=article.css.map */
