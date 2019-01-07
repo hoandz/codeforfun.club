@@ -340,6 +340,22 @@ html,body{
       &.active_about{
         display: inline;
       }
+      ul{
+        margin: 0;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        padding: 0;
+        padding-bottom: 4px;
+        width: 150px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.26);
+        li{
+          list-style: none;
+        }
+      }
+      p{
+        margin: 0;
+        font-size: 14px;
+      }
     }
     .about_project{
       padding-top: 35px;
