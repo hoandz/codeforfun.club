@@ -42,6 +42,9 @@ html, body {
           transition: 0.4s;
           opacity: 0.8;
           padding-right: 15px; }
+          ._container .header_article .header-left ul li a {
+            text-decoration: none;
+            color: white; }
           ._container .header_article .header-left ul li:hover {
             opacity: 1; }
           ._container .header_article .header-left ul li:nth-child(1) {
@@ -87,6 +90,11 @@ html, body {
             ._container .header_article .header-right ul li span:hover {
               background: white;
               color: black; }
+            ._container .header_article .header-right ul li span:hover a {
+              color: black; }
+            ._container .header_article .header-right ul li span a {
+              text-decoration: none;
+              color: white; }
           ._container .header_article .header-right ul li input {
             width: 27px;
             height: 28px;

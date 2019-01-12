@@ -51,14 +51,6 @@ $(document).ready(function(){
   });
   // (*** End Xu ly menu ***)
 
-  // (*** Phần xử lý form contact ***)
-  $('#ask_contact').click(function(){
-      $('.form_contact').toggleClass('active_form_contact');
-  });
-  $('.form_contact i').click(function(){
-      $('.form_contact').removeClass('active_form_contact');
-  });
-  // (*** End Phần xử lý form contact ***)
   //xu ly form sub
   $('#subscribe_form').click(function(){
     $('.form_sub').addClass('active_form_sub');

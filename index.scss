@@ -227,17 +227,6 @@ html,body{
               color: white;
             }
           }
-          &.ask_contact{
-            @media only screen and (max-width: 836px){
-              display: none;
-            }
-          }
-          &.ask_contact_mobile{
-            display: none;
-            @media only screen and (max-width: 836px){
-              display: inline;
-            }
-          }
         }
       }
     }

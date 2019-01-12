@@ -42,6 +42,10 @@ html,body{
           transition: 0.4s;
           opacity: 0.8;
           padding-right: 15px;
+          a{
+            text-decoration: none;
+            color: white;
+          }
           &:hover{
             opacity: 1;
           }
@@ -95,6 +99,15 @@ html,body{
             &:hover{
               background: white;
               color: black;
+            }
+            &:hover{
+              a{
+                color: black;
+              }
+            }
+            a{
+              text-decoration: none;
+              color: white;
             }
           }
           input{
