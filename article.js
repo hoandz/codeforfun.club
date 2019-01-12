@@ -61,12 +61,4 @@ $(document).ready(function(){
     });
   // (*** End Xu Ly Backtotop article ***)
   
-  // (*** Phần xử lý form contact ***)
-  $('#ask_contact').click(function(){
-      $('.form_contact').toggleClass('active_form_contact');
-  });
-  $('.form_contact i').click(function(){
-      $('.form_contact').removeClass('active_form_contact');
-  });
-  // (*** End Phần xử lý form contact ***)
 });

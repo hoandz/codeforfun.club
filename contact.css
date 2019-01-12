@@ -147,6 +147,11 @@ html, body {
             ._container .foreground .follow ul li span:hover {
               background: white;
               color: black; }
+            ._container .foreground .follow ul li span:hover a {
+              color: black; }
+            ._container .foreground .follow ul li span a {
+              text-decoration: none;
+              color: white; }
           ._container .foreground .follow ul li strong {
             font-weight: normal;
             margin-right: 3px;
@@ -421,33 +426,6 @@ html, body {
             ._container .footer .site-footer .site-footer-right ul li:hover {
               opacity: 1; }
 
-.form_contact {
-  width: 100%;
-  height: 100%;
-  z-index: -9000;
-  top: 0;
-  background: rgba(43, 43, 43, 0.8);
-  position: absolute;
-  opacity: 0;
-  transition: 0.3s; }
-  @media only screen and (max-width: 836px) {
-    .form_contact {
-      display: none; } }
-  .form_contact iframe {
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute; }
-  .form_contact i {
-    float: right;
-    cursor: pointer;
-    color: white;
-    padding: 7px; }
-  .form_contact.active_form_contact {
-    opacity: 1;
-    z-index: 90000;
-    position: fixed; }
-
 .form_sub {
   width: 100%;
   height: 100%;
@@ -627,22 +605,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-34px) translateY(-10vh);
+    transform: translateX(32px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(21px) translateY(-20vh);
+    transform: translateX(-25px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(0px) translateY(-30vh);
+    transform: translateX(7px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-10px) translateY(-40vh);
+    transform: translateX(-14px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-35px) translateY(-50vh);
+    transform: translateX(-4px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-18px) translateY(-100vh);
+    transform: translateX(-34px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(1) {
   animation-name: particle-1; }
@@ -652,22 +630,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(36px) translateY(-10vh);
+    transform: translateX(9px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(19px) translateY(-20vh);
+    transform: translateX(22px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-36px) translateY(-30vh);
+    transform: translateX(29px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(2px) translateY(-40vh);
+    transform: translateX(-15px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(27px) translateY(-50vh);
+    transform: translateX(-20px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-23px) translateY(-100vh);
+    transform: translateX(23px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(2) {
   animation-name: particle-2; }
@@ -677,22 +655,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(24px) translateY(-10vh);
+    transform: translateX(-6px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(6px) translateY(-20vh);
+    transform: translateX(-12px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(31px) translateY(-30vh);
+    transform: translateX(1px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(8px) translateY(-40vh);
+    transform: translateX(-23px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-13px) translateY(-50vh);
+    transform: translateX(17px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-37px) translateY(-100vh);
+    transform: translateX(0px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(3) {
   animation-name: particle-3; }
@@ -702,22 +680,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-28px) translateY(-10vh);
+    transform: translateX(37px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-22px) translateY(-20vh);
+    transform: translateX(-21px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(16px) translateY(-30vh);
+    transform: translateX(-6px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-16px) translateY(-40vh);
+    transform: translateX(-32px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(2px) translateY(-50vh);
+    transform: translateX(17px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(17px) translateY(-100vh);
+    transform: translateX(15px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(4) {
   animation-name: particle-4; }
@@ -727,22 +705,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(3px) translateY(-10vh);
+    transform: translateX(35px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-8px) translateY(-20vh);
+    transform: translateX(16px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(23px) translateY(-30vh);
+    transform: translateX(21px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(19px) translateY(-40vh);
+    transform: translateX(28px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-13px) translateY(-50vh);
+    transform: translateX(29px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(34px) translateY(-100vh);
+    transform: translateX(-18px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(5) {
   animation-name: particle-5; }
@@ -752,22 +730,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-28px) translateY(-10vh);
+    transform: translateX(38px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(22px) translateY(-20vh);
+    transform: translateX(5px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(29px) translateY(-30vh);
+    transform: translateX(10px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(9px) translateY(-40vh);
+    transform: translateX(20px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-2px) translateY(-50vh);
+    transform: translateX(-10px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-14px) translateY(-100vh);
+    transform: translateX(0px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(6) {
   animation-name: particle-6; }
@@ -777,22 +755,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(20px) translateY(-10vh);
+    transform: translateX(7px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(20px) translateY(-20vh);
+    transform: translateX(30px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-17px) translateY(-30vh);
+    transform: translateX(17px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(4px) translateY(-40vh);
+    transform: translateX(-17px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(39px) translateY(-50vh);
+    transform: translateX(-2px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-16px) translateY(-100vh);
+    transform: translateX(-28px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(7) {
   animation-name: particle-7; }
@@ -802,22 +780,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(29px) translateY(-10vh);
+    transform: translateX(-39px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-6px) translateY(-20vh);
+    transform: translateX(-14px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(21px) translateY(-30vh);
+    transform: translateX(12px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(22px) translateY(-40vh);
+    transform: translateX(-31px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-10px) translateY(-50vh);
+    transform: translateX(-32px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(17px) translateY(-100vh);
+    transform: translateX(-29px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(8) {
   animation-name: particle-8; }
@@ -827,22 +805,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-4px) translateY(-10vh);
+    transform: translateX(-5px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(34px) translateY(-20vh);
+    transform: translateX(35px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-17px) translateY(-30vh);
+    transform: translateX(31px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-39px) translateY(-40vh);
+    transform: translateX(-9px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(3px) translateY(-50vh);
+    transform: translateX(18px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-33px) translateY(-100vh);
+    transform: translateX(32px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(9) {
   animation-name: particle-9; }
@@ -852,22 +830,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(36px) translateY(-10vh);
+    transform: translateX(-20px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-14px) translateY(-20vh);
+    transform: translateX(39px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(13px) translateY(-30vh);
+    transform: translateX(-32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-21px) translateY(-40vh);
+    transform: translateX(38px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-4px) translateY(-50vh);
+    transform: translateX(26px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-1px) translateY(-100vh);
+    transform: translateX(-31px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(10) {
   animation-name: particle-10; }
@@ -877,22 +855,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(5px) translateY(-10vh);
+    transform: translateX(-25px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-25px) translateY(-20vh);
+    transform: translateX(-15px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(30px) translateY(-30vh);
+    transform: translateX(-11px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-6px) translateY(-40vh);
+    transform: translateX(-14px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(4px) translateY(-50vh);
+    transform: translateX(-12px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-33px) translateY(-100vh);
+    transform: translateX(21px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(11) {
   animation-name: particle-11; }
@@ -902,22 +880,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(23px) translateY(-10vh);
+    transform: translateX(-20px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(15px) translateY(-20vh);
+    transform: translateX(35px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(9px) translateY(-30vh);
+    transform: translateX(12px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-33px) translateY(-40vh);
+    transform: translateX(31px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-7px) translateY(-50vh);
+    transform: translateX(1px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-23px) translateY(-100vh);
+    transform: translateX(-30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(12) {
   animation-name: particle-12; }
@@ -927,22 +905,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(20px) translateY(-10vh);
+    transform: translateX(-6px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-39px) translateY(-20vh);
+    transform: translateX(-16px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-13px) translateY(-30vh);
+    transform: translateX(-18px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-27px) translateY(-40vh);
+    transform: translateX(3px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-34px) translateY(-50vh);
+    transform: translateX(2px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-4px) translateY(-100vh);
+    transform: translateX(-9px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(13) {
   animation-name: particle-13; }
@@ -952,22 +930,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-21px) translateY(-10vh);
+    transform: translateX(29px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-28px) translateY(-20vh);
+    transform: translateX(-15px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(25px) translateY(-30vh);
+    transform: translateX(-32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-16px) translateY(-40vh);
+    transform: translateX(36px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-27px) translateY(-50vh);
+    transform: translateX(-12px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-21px) translateY(-100vh);
+    transform: translateX(31px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(14) {
   animation-name: particle-14; }
@@ -977,22 +955,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(21px) translateY(-10vh);
+    transform: translateX(16px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-25px) translateY(-20vh);
+    transform: translateX(-33px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(30px) translateY(-30vh);
+    transform: translateX(-7px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(5px) translateY(-40vh);
+    transform: translateX(-10px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(2px) translateY(-50vh);
+    transform: translateX(40px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(36px) translateY(-100vh);
+    transform: translateX(-12px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(15) {
   animation-name: particle-15; }
@@ -1002,22 +980,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-21px) translateY(-10vh);
+    transform: translateX(10px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(27px) translateY(-20vh);
+    transform: translateX(-29px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-12px) translateY(-30vh);
+    transform: translateX(24px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(0px) translateY(-40vh);
+    transform: translateX(-38px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(29px) translateY(-50vh);
+    transform: translateX(37px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(10px) translateY(-100vh);
+    transform: translateX(-26px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(16) {
   animation-name: particle-16; }
@@ -1027,22 +1005,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-15px) translateY(-10vh);
+    transform: translateX(-13px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(2px) translateY(-20vh);
+    transform: translateX(31px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-27px) translateY(-30vh);
+    transform: translateX(31px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-15px) translateY(-40vh);
+    transform: translateX(11px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(35px) translateY(-50vh);
+    transform: translateX(4px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(37px) translateY(-100vh);
+    transform: translateX(31px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(17) {
   animation-name: particle-17; }
@@ -1052,22 +1030,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(17px) translateY(-10vh);
+    transform: translateX(-33px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(21px) translateY(-20vh);
+    transform: translateX(-39px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(18px) translateY(-30vh);
+    transform: translateX(11px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-29px) translateY(-40vh);
+    transform: translateX(-2px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(27px) translateY(-50vh);
+    transform: translateX(31px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-34px) translateY(-100vh);
+    transform: translateX(2px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(18) {
   animation-name: particle-18; }
@@ -1077,22 +1055,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(33px) translateY(-10vh);
+    transform: translateX(35px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-4px) translateY(-20vh);
+    transform: translateX(9px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(4px) translateY(-30vh);
+    transform: translateX(20px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(26px) translateY(-40vh);
+    transform: translateX(-1px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(12px) translateY(-50vh);
+    transform: translateX(-29px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(4px) translateY(-100vh);
+    transform: translateX(-3px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(19) {
   animation-name: particle-19; }
@@ -1102,22 +1080,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(8px) translateY(-10vh);
+    transform: translateX(5px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-30px) translateY(-20vh);
+    transform: translateX(12px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(1px) translateY(-30vh);
+    transform: translateX(20px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-33px) translateY(-40vh);
+    transform: translateX(-21px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-2px) translateY(-50vh);
+    transform: translateX(-6px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(26px) translateY(-100vh);
+    transform: translateX(-19px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(20) {
   animation-name: particle-20; }
@@ -1127,22 +1105,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-28px) translateY(-10vh);
+    transform: translateX(17px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-35px) translateY(-20vh);
+    transform: translateX(10px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-7px) translateY(-30vh);
+    transform: translateX(13px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-8px) translateY(-40vh);
+    transform: translateX(-5px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-16px) translateY(-50vh);
+    transform: translateX(-28px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-3px) translateY(-100vh);
+    transform: translateX(-37px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(21) {
   animation-name: particle-21; }
@@ -1152,22 +1130,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-18px) translateY(-10vh);
+    transform: translateX(24px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(13px) translateY(-20vh);
+    transform: translateX(-30px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(6px) translateY(-30vh);
+    transform: translateX(12px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(8px) translateY(-40vh);
+    transform: translateX(-30px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(24px) translateY(-50vh);
+    transform: translateX(-12px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(3px) translateY(-100vh);
+    transform: translateX(6px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(22) {
   animation-name: particle-22; }
@@ -1177,22 +1155,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-9px) translateY(-10vh);
+    transform: translateX(0px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(16px) translateY(-20vh);
+    transform: translateX(40px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-13px) translateY(-30vh);
+    transform: translateX(16px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(33px) translateY(-40vh);
+    transform: translateX(-28px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-1px) translateY(-50vh);
+    transform: translateX(17px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(33px) translateY(-100vh);
+    transform: translateX(24px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(23) {
   animation-name: particle-23; }
@@ -1202,22 +1180,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-30px) translateY(-10vh);
+    transform: translateX(6px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(25px) translateY(-20vh);
+    transform: translateX(-9px) translateY(-20vh);
     opacity: 0.8; }
   50% {
     transform: translateX(11px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(0px) translateY(-40vh);
+    transform: translateX(-24px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(6px) translateY(-50vh);
+    transform: translateX(-30px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(1px) translateY(-100vh);
+    transform: translateX(36px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(24) {
   animation-name: particle-24; }
@@ -1227,22 +1205,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(2px) translateY(-10vh);
+    transform: translateX(-36px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(7px) translateY(-20vh);
+    transform: translateX(-29px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(37px) translateY(-30vh);
+    transform: translateX(3px) translateY(-30vh);
     opacity: 0.7; }
   60% {
     transform: translateX(-25px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-32px) translateY(-50vh);
+    transform: translateX(-6px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-17px) translateY(-100vh);
+    transform: translateX(24px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(25) {
   animation-name: particle-25; }
@@ -1252,22 +1230,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-5px) translateY(-10vh);
+    transform: translateX(-27px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(20px) translateY(-20vh);
+    transform: translateX(17px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(18px) translateY(-30vh);
+    transform: translateX(-11px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(0px) translateY(-40vh);
+    transform: translateX(25px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-11px) translateY(-50vh);
+    transform: translateX(-38px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(36px) translateY(-100vh);
+    transform: translateX(7px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(26) {
   animation-name: particle-26; }
@@ -1277,22 +1255,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(18px) translateY(-10vh);
+    transform: translateX(38px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(20px) translateY(-20vh);
+    transform: translateX(-16px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-21px) translateY(-30vh);
+    transform: translateX(24px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(29px) translateY(-40vh);
+    transform: translateX(-19px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(8px) translateY(-50vh);
+    transform: translateX(22px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(30px) translateY(-100vh);
+    transform: translateX(21px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(27) {
   animation-name: particle-27; }
@@ -1302,22 +1280,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(27px) translateY(-10vh);
+    transform: translateX(-32px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(14px) translateY(-20vh);
+    transform: translateX(13px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(19px) translateY(-30vh);
+    transform: translateX(-12px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-3px) translateY(-40vh);
+    transform: translateX(22px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(28px) translateY(-50vh);
+    transform: translateX(22px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(19px) translateY(-100vh);
+    transform: translateX(-17px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(28) {
   animation-name: particle-28; }
@@ -1327,22 +1305,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(22px) translateY(-10vh);
+    transform: translateX(-15px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-14px) translateY(-20vh);
+    transform: translateX(4px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(23px) translateY(-30vh);
+    transform: translateX(-20px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-1px) translateY(-40vh);
+    transform: translateX(-29px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(2px) translateY(-50vh);
+    transform: translateX(-29px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-26px) translateY(-100vh);
+    transform: translateX(0px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(29) {
   animation-name: particle-29; }
@@ -1352,22 +1330,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(30px) translateY(-10vh);
+    transform: translateX(-4px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(35px) translateY(-20vh);
+    transform: translateX(-27px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(32px) translateY(-30vh);
+    transform: translateX(27px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-26px) translateY(-40vh);
+    transform: translateX(24px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(31px) translateY(-50vh);
+    transform: translateX(-3px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(1px) translateY(-100vh);
+    transform: translateX(-36px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(30) {
   animation-name: particle-30; }
@@ -1377,22 +1355,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-14px) translateY(-10vh);
+    transform: translateX(-22px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(8px) translateY(-20vh);
+    transform: translateX(39px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(33px) translateY(-30vh);
+    transform: translateX(-27px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(8px) translateY(-40vh);
+    transform: translateX(27px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(32px) translateY(-50vh);
+    transform: translateX(22px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(31px) translateY(-100vh);
+    transform: translateX(-25px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(31) {
   animation-name: particle-31; }
@@ -1402,22 +1380,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-16px) translateY(-10vh);
+    transform: translateX(11px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-13px) translateY(-20vh);
+    transform: translateX(1px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-14px) translateY(-30vh);
+    transform: translateX(21px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(19px) translateY(-40vh);
+    transform: translateX(-35px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(0px) translateY(-50vh);
+    transform: translateX(38px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(20px) translateY(-100vh);
+    transform: translateX(-1px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(32) {
   animation-name: particle-32; }
@@ -1427,22 +1405,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(20px) translateY(-10vh);
+    transform: translateX(39px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-24px) translateY(-20vh);
+    transform: translateX(-37px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-2px) translateY(-30vh);
+    transform: translateX(16px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-18px) translateY(-40vh);
+    transform: translateX(7px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-4px) translateY(-50vh);
+    transform: translateX(-14px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-18px) translateY(-100vh);
+    transform: translateX(12px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(33) {
   animation-name: particle-33; }
@@ -1452,22 +1430,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-23px) translateY(-10vh);
+    transform: translateX(4px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(34px) translateY(-20vh);
+    transform: translateX(39px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-34px) translateY(-30vh);
+    transform: translateX(20px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(0px) translateY(-40vh);
+    transform: translateX(-36px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-32px) translateY(-50vh);
+    transform: translateX(-6px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-29px) translateY(-100vh);
+    transform: translateX(-31px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(34) {
   animation-name: particle-34; }
@@ -1477,22 +1455,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-32px) translateY(-10vh);
+    transform: translateX(-14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(34px) translateY(-20vh);
+    transform: translateX(-22px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-31px) translateY(-30vh);
+    transform: translateX(-38px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(13px) translateY(-40vh);
+    transform: translateX(-33px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-17px) translateY(-50vh);
+    transform: translateX(23px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-31px) translateY(-100vh);
+    transform: translateX(24px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(35) {
   animation-name: particle-35; }
@@ -1502,22 +1480,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(2px) translateY(-10vh);
+    transform: translateX(-2px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-28px) translateY(-20vh);
+    transform: translateX(-26px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-4px) translateY(-30vh);
+    transform: translateX(-37px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-33px) translateY(-40vh);
+    transform: translateX(-15px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(33px) translateY(-50vh);
+    transform: translateX(-32px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-15px) translateY(-100vh);
+    transform: translateX(13px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(36) {
   animation-name: particle-36; }
@@ -1527,22 +1505,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(10px) translateY(-10vh);
+    transform: translateX(21px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(9px) translateY(-20vh);
+    transform: translateX(-11px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-28px) translateY(-30vh);
+    transform: translateX(-32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(32px) translateY(-40vh);
+    transform: translateX(19px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(28px) translateY(-50vh);
+    transform: translateX(31px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-37px) translateY(-100vh);
+    transform: translateX(-11px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(37) {
   animation-name: particle-37; }
@@ -1552,22 +1530,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(19px) translateY(-10vh);
+    transform: translateX(-4px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-17px) translateY(-20vh);
+    transform: translateX(-5px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(9px) translateY(-30vh);
+    transform: translateX(-8px) translateY(-30vh);
     opacity: 0.7; }
   60% {
     transform: translateX(-7px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(31px) translateY(-50vh);
+    transform: translateX(-38px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(8px) translateY(-100vh);
+    transform: translateX(2px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(38) {
   animation-name: particle-38; }
@@ -1577,22 +1555,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(20px) translateY(-10vh);
+    transform: translateX(-6px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-30px) translateY(-20vh);
+    transform: translateX(23px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-3px) translateY(-30vh);
+    transform: translateX(28px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-28px) translateY(-40vh);
+    transform: translateX(-20px) translateY(-40vh);
     opacity: 0.6; }
   70% {
     transform: translateX(-34px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-28px) translateY(-100vh);
+    transform: translateX(30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(39) {
   animation-name: particle-39; }
@@ -1602,22 +1580,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-5px) translateY(-10vh);
+    transform: translateX(-29px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(12px) translateY(-20vh);
+    transform: translateX(-28px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-11px) translateY(-30vh);
+    transform: translateX(13px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(33px) translateY(-40vh);
+    transform: translateX(-13px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(20px) translateY(-50vh);
+    transform: translateX(31px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-4px) translateY(-100vh);
+    transform: translateX(-36px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(40) {
   animation-name: particle-40; }
@@ -1627,22 +1605,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-4px) translateY(-10vh);
+    transform: translateX(-15px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(12px) translateY(-20vh);
+    transform: translateX(25px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(38px) translateY(-30vh);
+    transform: translateX(40px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(10px) translateY(-40vh);
+    transform: translateX(11px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(15px) translateY(-50vh);
+    transform: translateX(-25px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(8px) translateY(-100vh);
+    transform: translateX(22px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(41) {
   animation-name: particle-41; }
@@ -1652,22 +1630,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(13px) translateY(-10vh);
+    transform: translateX(-10px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(4px) translateY(-20vh);
+    transform: translateX(25px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-39px) translateY(-30vh);
+    transform: translateX(9px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-9px) translateY(-40vh);
+    transform: translateX(-8px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-35px) translateY(-50vh);
+    transform: translateX(18px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-27px) translateY(-100vh);
+    transform: translateX(-29px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(42) {
   animation-name: particle-42; }
@@ -1677,22 +1655,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(6px) translateY(-10vh);
+    transform: translateX(14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(0px) translateY(-20vh);
+    transform: translateX(-19px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(31px) translateY(-30vh);
+    transform: translateX(-3px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-34px) translateY(-40vh);
+    transform: translateX(32px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(8px) translateY(-50vh);
+    transform: translateX(-20px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(24px) translateY(-100vh);
+    transform: translateX(-30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(43) {
   animation-name: particle-43; }
@@ -1702,22 +1680,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-14px) translateY(-10vh);
+    transform: translateX(15px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(18px) translateY(-20vh);
+    transform: translateX(11px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-16px) translateY(-30vh);
+    transform: translateX(22px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(24px) translateY(-40vh);
+    transform: translateX(37px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-24px) translateY(-50vh);
+    transform: translateX(1px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(16px) translateY(-100vh);
+    transform: translateX(39px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(44) {
   animation-name: particle-44; }
@@ -1727,22 +1705,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(29px) translateY(-10vh);
+    transform: translateX(9px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-33px) translateY(-20vh);
+    transform: translateX(-32px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-38px) translateY(-30vh);
+    transform: translateX(3px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(11px) translateY(-40vh);
+    transform: translateX(0px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-18px) translateY(-50vh);
+    transform: translateX(-7px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-5px) translateY(-100vh);
+    transform: translateX(29px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(45) {
   animation-name: particle-45; }
@@ -1752,22 +1730,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(7px) translateY(-10vh);
+    transform: translateX(14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(9px) translateY(-20vh);
+    transform: translateX(23px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(18px) translateY(-30vh);
+    transform: translateX(38px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(16px) translateY(-40vh);
+    transform: translateX(-23px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(5px) translateY(-50vh);
+    transform: translateX(6px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(21px) translateY(-100vh);
+    transform: translateX(-5px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(46) {
   animation-name: particle-46; }
@@ -1777,22 +1755,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-20px) translateY(-10vh);
+    transform: translateX(-15px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-25px) translateY(-20vh);
+    transform: translateX(34px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(2px) translateY(-30vh);
+    transform: translateX(3px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-15px) translateY(-40vh);
+    transform: translateX(8px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-28px) translateY(-50vh);
+    transform: translateX(26px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-20px) translateY(-100vh);
+    transform: translateX(16px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(47) {
   animation-name: particle-47; }
@@ -1802,22 +1780,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(37px) translateY(-10vh);
+    transform: translateX(-38px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(15px) translateY(-20vh);
+    transform: translateX(-15px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-23px) translateY(-30vh);
+    transform: translateX(-31px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-6px) translateY(-40vh);
+    transform: translateX(16px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-27px) translateY(-50vh);
+    transform: translateX(4px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-3px) translateY(-100vh);
+    transform: translateX(-26px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(48) {
   animation-name: particle-48; }
@@ -1827,22 +1805,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-30px) translateY(-10vh);
+    transform: translateX(-29px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(0px) translateY(-20vh);
+    transform: translateX(23px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(20px) translateY(-30vh);
+    transform: translateX(35px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(39px) translateY(-40vh);
+    transform: translateX(-2px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-29px) translateY(-50vh);
+    transform: translateX(-1px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(24px) translateY(-100vh);
+    transform: translateX(13px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(49) {
   animation-name: particle-49; }
@@ -1852,22 +1830,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-4px) translateY(-10vh);
+    transform: translateX(-8px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-24px) translateY(-20vh);
+    transform: translateX(1px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-12px) translateY(-30vh);
+    transform: translateX(10px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(5px) translateY(-40vh);
+    transform: translateX(-16px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-31px) translateY(-50vh);
+    transform: translateX(-32px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(19px) translateY(-100vh);
+    transform: translateX(-38px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(50) {
   animation-name: particle-50; }
@@ -1877,22 +1855,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-27px) translateY(-10vh);
+    transform: translateX(-7px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(2px) translateY(-20vh);
+    transform: translateX(4px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(4px) translateY(-30vh);
+    transform: translateX(-32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-29px) translateY(-40vh);
+    transform: translateX(9px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-33px) translateY(-50vh);
+    transform: translateX(33px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-14px) translateY(-100vh);
+    transform: translateX(0px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(51) {
   animation-name: particle-51; }
@@ -1902,22 +1880,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-12px) translateY(-10vh);
+    transform: translateX(-6px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(27px) translateY(-20vh);
+    transform: translateX(-12px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(24px) translateY(-30vh);
+    transform: translateX(-1px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-14px) translateY(-40vh);
+    transform: translateX(23px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-16px) translateY(-50vh);
+    transform: translateX(-35px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(34px) translateY(-100vh);
+    transform: translateX(11px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(52) {
   animation-name: particle-52; }
@@ -1927,22 +1905,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-11px) translateY(-10vh);
+    transform: translateX(4px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-2px) translateY(-20vh);
+    transform: translateX(19px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(40px) translateY(-30vh);
+    transform: translateX(-6px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-38px) translateY(-40vh);
+    transform: translateX(21px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-34px) translateY(-50vh);
+    transform: translateX(-5px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-24px) translateY(-100vh);
+    transform: translateX(28px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(53) {
   animation-name: particle-53; }
@@ -1952,22 +1930,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-23px) translateY(-10vh);
+    transform: translateX(4px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-14px) translateY(-20vh);
+    transform: translateX(-6px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-33px) translateY(-30vh);
+    transform: translateX(-2px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-8px) translateY(-40vh);
+    transform: translateX(29px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-13px) translateY(-50vh);
+    transform: translateX(-30px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-23px) translateY(-100vh);
+    transform: translateX(-35px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(54) {
   animation-name: particle-54; }
@@ -1977,22 +1955,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-1px) translateY(-10vh);
+    transform: translateX(-35px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-24px) translateY(-20vh);
+    transform: translateX(32px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(13px) translateY(-30vh);
+    transform: translateX(31px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-35px) translateY(-40vh);
+    transform: translateX(-17px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(27px) translateY(-50vh);
+    transform: translateX(-4px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(33px) translateY(-100vh);
+    transform: translateX(-37px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(55) {
   animation-name: particle-55; }
@@ -2002,22 +1980,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-21px) translateY(-10vh);
+    transform: translateX(6px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-24px) translateY(-20vh);
+    transform: translateX(17px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-8px) translateY(-30vh);
+    transform: translateX(5px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-34px) translateY(-40vh);
+    transform: translateX(-15px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(30px) translateY(-50vh);
+    transform: translateX(28px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(20px) translateY(-100vh);
+    transform: translateX(23px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(56) {
   animation-name: particle-56; }
@@ -2027,22 +2005,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-29px) translateY(-10vh);
+    transform: translateX(-32px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-35px) translateY(-20vh);
+    transform: translateX(-6px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-3px) translateY(-30vh);
+    transform: translateX(10px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(26px) translateY(-40vh);
+    transform: translateX(19px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-15px) translateY(-50vh);
+    transform: translateX(-29px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-34px) translateY(-100vh);
+    transform: translateX(14px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(57) {
   animation-name: particle-57; }
@@ -2052,22 +2030,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-23px) translateY(-10vh);
+    transform: translateX(31px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(25px) translateY(-20vh);
+    transform: translateX(-24px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(5px) translateY(-30vh);
+    transform: translateX(-9px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-4px) translateY(-40vh);
+    transform: translateX(15px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-30px) translateY(-50vh);
+    transform: translateX(13px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-20px) translateY(-100vh);
+    transform: translateX(-30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(58) {
   animation-name: particle-58; }
@@ -2077,22 +2055,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(17px) translateY(-10vh);
+    transform: translateX(-29px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(29px) translateY(-20vh);
+    transform: translateX(31px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-4px) translateY(-30vh);
+    transform: translateX(-3px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(6px) translateY(-40vh);
+    transform: translateX(-15px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(7px) translateY(-50vh);
+    transform: translateX(-35px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(5px) translateY(-100vh);
+    transform: translateX(16px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(59) {
   animation-name: particle-59; }
@@ -2102,22 +2080,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-8px) translateY(-10vh);
+    transform: translateX(-31px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-5px) translateY(-20vh);
+    transform: translateX(8px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(34px) translateY(-30vh);
+    transform: translateX(-3px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-8px) translateY(-40vh);
+    transform: translateX(-32px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(27px) translateY(-50vh);
+    transform: translateX(16px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(9px) translateY(-100vh);
+    transform: translateX(20px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(60) {
   animation-name: particle-60; }
@@ -2127,22 +2105,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-5px) translateY(-10vh);
+    transform: translateX(-14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(22px) translateY(-20vh);
+    transform: translateX(-1px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-8px) translateY(-30vh);
+    transform: translateX(-22px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-38px) translateY(-40vh);
+    transform: translateX(34px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(33px) translateY(-50vh);
+    transform: translateX(-38px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(14px) translateY(-100vh);
+    transform: translateX(23px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(61) {
   animation-name: particle-61; }
@@ -2152,22 +2130,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(24px) translateY(-10vh);
+    transform: translateX(-24px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(34px) translateY(-20vh);
+    transform: translateX(-13px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(26px) translateY(-30vh);
+    transform: translateX(28px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-20px) translateY(-40vh);
+    transform: translateX(-34px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(39px) translateY(-50vh);
+    transform: translateX(0px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-20px) translateY(-100vh);
+    transform: translateX(-30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(62) {
   animation-name: particle-62; }
@@ -2177,22 +2155,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-1px) translateY(-10vh);
+    transform: translateX(17px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-26px) translateY(-20vh);
+    transform: translateX(-12px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(4px) translateY(-30vh);
+    transform: translateX(-14px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(31px) translateY(-40vh);
+    transform: translateX(-2px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(23px) translateY(-50vh);
+    transform: translateX(14px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-39px) translateY(-100vh);
+    transform: translateX(-26px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(63) {
   animation-name: particle-63; }
@@ -2202,22 +2180,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(39px) translateY(-10vh);
+    transform: translateX(-19px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-33px) translateY(-20vh);
+    transform: translateX(14px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-14px) translateY(-30vh);
+    transform: translateX(-36px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-14px) translateY(-40vh);
+    transform: translateX(-33px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(35px) translateY(-50vh);
+    transform: translateX(8px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(39px) translateY(-100vh);
+    transform: translateX(-5px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(64) {
   animation-name: particle-64; }
@@ -2227,19 +2205,19 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(29px) translateY(-10vh);
+    transform: translateX(-28px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(32px) translateY(-20vh);
+    transform: translateX(-16px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(14px) translateY(-30vh);
+    transform: translateX(23px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-32px) translateY(-40vh);
+    transform: translateX(26px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-28px) translateY(-50vh);
+    transform: translateX(16px) translateY(-50vh);
     opacity: 0.5; }
   100% {
     transform: translateX(-26px) translateY(-100vh);
@@ -2252,22 +2230,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(12px) translateY(-10vh);
+    transform: translateX(3px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(0px) translateY(-20vh);
+    transform: translateX(37px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(9px) translateY(-30vh);
+    transform: translateX(-32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-5px) translateY(-40vh);
+    transform: translateX(20px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-1px) translateY(-50vh);
+    transform: translateX(14px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-34px) translateY(-100vh);
+    transform: translateX(-30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(66) {
   animation-name: particle-66; }
@@ -2277,22 +2255,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-39px) translateY(-10vh);
+    transform: translateX(-18px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-36px) translateY(-20vh);
+    transform: translateX(25px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(27px) translateY(-30vh);
+    transform: translateX(12px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(30px) translateY(-40vh);
+    transform: translateX(-10px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(33px) translateY(-50vh);
+    transform: translateX(-35px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-14px) translateY(-100vh);
+    transform: translateX(-13px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(67) {
   animation-name: particle-67; }
@@ -2302,22 +2280,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(40px) translateY(-10vh);
+    transform: translateX(-27px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(1px) translateY(-20vh);
+    transform: translateX(7px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(22px) translateY(-30vh);
+    transform: translateX(39px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(10px) translateY(-40vh);
+    transform: translateX(29px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-14px) translateY(-50vh);
+    transform: translateX(38px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-28px) translateY(-100vh);
+    transform: translateX(-32px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(68) {
   animation-name: particle-68; }
@@ -2327,22 +2305,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-4px) translateY(-10vh);
+    transform: translateX(-21px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(26px) translateY(-20vh);
+    transform: translateX(33px) translateY(-20vh);
     opacity: 0.8; }
   50% {
     transform: translateX(-32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-27px) translateY(-40vh);
+    transform: translateX(9px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(26px) translateY(-50vh);
+    transform: translateX(11px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(38px) translateY(-100vh);
+    transform: translateX(-32px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(69) {
   animation-name: particle-69; }
@@ -2352,22 +2330,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-13px) translateY(-10vh);
+    transform: translateX(-4px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(2px) translateY(-20vh);
+    transform: translateX(-35px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-21px) translateY(-30vh);
+    transform: translateX(5px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-39px) translateY(-40vh);
+    transform: translateX(-14px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(7px) translateY(-50vh);
+    transform: translateX(24px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(30px) translateY(-100vh);
+    transform: translateX(13px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(70) {
   animation-name: particle-70; }
@@ -2377,22 +2355,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(13px) translateY(-10vh);
+    transform: translateX(-14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-34px) translateY(-20vh);
+    transform: translateX(32px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(24px) translateY(-30vh);
+    transform: translateX(38px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-25px) translateY(-40vh);
+    transform: translateX(32px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-36px) translateY(-50vh);
+    transform: translateX(-1px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-1px) translateY(-100vh);
+    transform: translateX(-13px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(71) {
   animation-name: particle-71; }
@@ -2402,22 +2380,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(33px) translateY(-10vh);
+    transform: translateX(-17px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(35px) translateY(-20vh);
+    transform: translateX(-26px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-31px) translateY(-30vh);
+    transform: translateX(21px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(25px) translateY(-40vh);
+    transform: translateX(-31px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-10px) translateY(-50vh);
+    transform: translateX(33px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-33px) translateY(-100vh);
+    transform: translateX(38px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(72) {
   animation-name: particle-72; }
@@ -2427,22 +2405,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-28px) translateY(-10vh);
+    transform: translateX(31px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-8px) translateY(-20vh);
+    transform: translateX(-31px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-38px) translateY(-30vh);
+    transform: translateX(32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-4px) translateY(-40vh);
+    transform: translateX(-23px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-22px) translateY(-50vh);
+    transform: translateX(11px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-21px) translateY(-100vh);
+    transform: translateX(-26px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(73) {
   animation-name: particle-73; }
@@ -2452,22 +2430,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-1px) translateY(-10vh);
+    transform: translateX(40px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-5px) translateY(-20vh);
+    transform: translateX(5px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-34px) translateY(-30vh);
+    transform: translateX(34px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(29px) translateY(-40vh);
+    transform: translateX(-6px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(5px) translateY(-50vh);
+    transform: translateX(8px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(27px) translateY(-100vh);
+    transform: translateX(-33px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(74) {
   animation-name: particle-74; }
@@ -2477,22 +2455,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-22px) translateY(-10vh);
+    transform: translateX(35px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(2px) translateY(-20vh);
+    transform: translateX(7px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-29px) translateY(-30vh);
+    transform: translateX(40px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(16px) translateY(-40vh);
+    transform: translateX(-17px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(35px) translateY(-50vh);
+    transform: translateX(-32px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-9px) translateY(-100vh);
+    transform: translateX(27px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(75) {
   animation-name: particle-75; }
@@ -2502,22 +2480,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(18px) translateY(-10vh);
+    transform: translateX(-37px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-13px) translateY(-20vh);
+    transform: translateX(25px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(34px) translateY(-30vh);
+    transform: translateX(-2px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(24px) translateY(-40vh);
+    transform: translateX(-2px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(2px) translateY(-50vh);
+    transform: translateX(-13px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(12px) translateY(-100vh);
+    transform: translateX(36px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(76) {
   animation-name: particle-76; }
@@ -2527,22 +2505,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(27px) translateY(-10vh);
+    transform: translateX(3px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(22px) translateY(-20vh);
+    transform: translateX(6px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(24px) translateY(-30vh);
+    transform: translateX(3px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(11px) translateY(-40vh);
+    transform: translateX(35px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-2px) translateY(-50vh);
+    transform: translateX(-3px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(10px) translateY(-100vh);
+    transform: translateX(6px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(77) {
   animation-name: particle-77; }
@@ -2552,22 +2530,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-33px) translateY(-10vh);
+    transform: translateX(5px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-33px) translateY(-20vh);
+    transform: translateX(23px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(4px) translateY(-30vh);
+    transform: translateX(-39px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(36px) translateY(-40vh);
+    transform: translateX(21px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(16px) translateY(-50vh);
+    transform: translateX(4px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-38px) translateY(-100vh);
+    transform: translateX(-34px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(78) {
   animation-name: particle-78; }
@@ -2577,22 +2555,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(13px) translateY(-10vh);
+    transform: translateX(19px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-39px) translateY(-20vh);
+    transform: translateX(4px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(0px) translateY(-30vh);
+    transform: translateX(-33px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-35px) translateY(-40vh);
+    transform: translateX(9px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-8px) translateY(-50vh);
+    transform: translateX(10px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-15px) translateY(-100vh);
+    transform: translateX(8px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(79) {
   animation-name: particle-79; }
@@ -2602,22 +2580,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(15px) translateY(-10vh);
+    transform: translateX(-14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(17px) translateY(-20vh);
+    transform: translateX(-25px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(9px) translateY(-30vh);
+    transform: translateX(2px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-12px) translateY(-40vh);
+    transform: translateX(19px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(14px) translateY(-50vh);
+    transform: translateX(-15px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-33px) translateY(-100vh);
+    transform: translateX(-30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(80) {
   animation-name: particle-80; }
@@ -2627,22 +2605,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(13px) translateY(-10vh);
+    transform: translateX(-14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-9px) translateY(-20vh);
+    transform: translateX(40px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-4px) translateY(-30vh);
+    transform: translateX(-32px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(23px) translateY(-40vh);
+    transform: translateX(-35px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-27px) translateY(-50vh);
+    transform: translateX(-10px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(26px) translateY(-100vh);
+    transform: translateX(30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(81) {
   animation-name: particle-81; }
@@ -2652,22 +2630,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-30px) translateY(-10vh);
+    transform: translateX(19px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-5px) translateY(-20vh);
+    transform: translateX(25px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(6px) translateY(-30vh);
+    transform: translateX(27px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-14px) translateY(-40vh);
+    transform: translateX(25px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(20px) translateY(-50vh);
+    transform: translateX(-4px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-27px) translateY(-100vh);
+    transform: translateX(-26px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(82) {
   animation-name: particle-82; }
@@ -2677,22 +2655,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(21px) translateY(-10vh);
+    transform: translateX(-24px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(27px) translateY(-20vh);
+    transform: translateX(-26px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-18px) translateY(-30vh);
+    transform: translateX(38px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-15px) translateY(-40vh);
+    transform: translateX(-2px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-39px) translateY(-50vh);
+    transform: translateX(-24px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-4px) translateY(-100vh);
+    transform: translateX(24px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(83) {
   animation-name: particle-83; }
@@ -2702,22 +2680,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-31px) translateY(-10vh);
+    transform: translateX(8px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-8px) translateY(-20vh);
+    transform: translateX(35px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(5px) translateY(-30vh);
+    transform: translateX(-23px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(23px) translateY(-40vh);
+    transform: translateX(-24px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(27px) translateY(-50vh);
+    transform: translateX(-4px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(12px) translateY(-100vh);
+    transform: translateX(-22px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(84) {
   animation-name: particle-84; }
@@ -2727,22 +2705,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-3px) translateY(-10vh);
+    transform: translateX(29px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-18px) translateY(-20vh);
+    transform: translateX(-27px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-8px) translateY(-30vh);
+    transform: translateX(-25px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-13px) translateY(-40vh);
+    transform: translateX(1px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-13px) translateY(-50vh);
+    transform: translateX(-6px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-5px) translateY(-100vh);
+    transform: translateX(-31px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(85) {
   animation-name: particle-85; }
@@ -2752,22 +2730,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-28px) translateY(-10vh);
+    transform: translateX(13px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(11px) translateY(-20vh);
+    transform: translateX(-22px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-9px) translateY(-30vh);
+    transform: translateX(1px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(27px) translateY(-40vh);
+    transform: translateX(-13px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-8px) translateY(-50vh);
+    transform: translateX(-2px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-22px) translateY(-100vh);
+    transform: translateX(-24px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(86) {
   animation-name: particle-86; }
@@ -2777,22 +2755,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-34px) translateY(-10vh);
+    transform: translateX(14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-29px) translateY(-20vh);
+    transform: translateX(0px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(0px) translateY(-30vh);
+    transform: translateX(-18px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(1px) translateY(-40vh);
+    transform: translateX(-38px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(2px) translateY(-50vh);
+    transform: translateX(-31px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(6px) translateY(-100vh);
+    transform: translateX(3px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(87) {
   animation-name: particle-87; }
@@ -2802,22 +2780,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(21px) translateY(-10vh);
+    transform: translateX(38px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-16px) translateY(-20vh);
+    transform: translateX(23px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(10px) translateY(-30vh);
+    transform: translateX(24px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(18px) translateY(-40vh);
+    transform: translateX(-26px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-35px) translateY(-50vh);
+    transform: translateX(8px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(10px) translateY(-100vh);
+    transform: translateX(-26px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(88) {
   animation-name: particle-88; }
@@ -2827,22 +2805,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-24px) translateY(-10vh);
+    transform: translateX(34px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(31px) translateY(-20vh);
+    transform: translateX(-3px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(23px) translateY(-30vh);
+    transform: translateX(-38px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-28px) translateY(-40vh);
+    transform: translateX(40px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-14px) translateY(-50vh);
+    transform: translateX(24px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(14px) translateY(-100vh);
+    transform: translateX(-30px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(89) {
   animation-name: particle-89; }
@@ -2852,22 +2830,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-33px) translateY(-10vh);
+    transform: translateX(28px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-39px) translateY(-20vh);
+    transform: translateX(-38px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(3px) translateY(-30vh);
+    transform: translateX(-1px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(14px) translateY(-40vh);
+    transform: translateX(-30px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-8px) translateY(-50vh);
+    transform: translateX(2px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-2px) translateY(-100vh);
+    transform: translateX(12px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(90) {
   animation-name: particle-90; }
@@ -2877,22 +2855,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(10px) translateY(-10vh);
+    transform: translateX(-14px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(3px) translateY(-20vh);
+    transform: translateX(-16px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(25px) translateY(-30vh);
+    transform: translateX(-38px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-4px) translateY(-40vh);
+    transform: translateX(-27px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(7px) translateY(-50vh);
+    transform: translateX(36px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(38px) translateY(-100vh);
+    transform: translateX(-21px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(91) {
   animation-name: particle-91; }
@@ -2902,22 +2880,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-35px) translateY(-10vh);
+    transform: translateX(-4px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-2px) translateY(-20vh);
+    transform: translateX(-31px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(36px) translateY(-30vh);
+    transform: translateX(22px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-27px) translateY(-40vh);
+    transform: translateX(8px) translateY(-40vh);
     opacity: 0.6; }
   70% {
     transform: translateX(18px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-20px) translateY(-100vh);
+    transform: translateX(-5px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(92) {
   animation-name: particle-92; }
@@ -2927,22 +2905,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(11px) translateY(-10vh);
+    transform: translateX(31px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(13px) translateY(-20vh);
+    transform: translateX(-31px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-25px) translateY(-30vh);
+    transform: translateX(-10px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(34px) translateY(-40vh);
+    transform: translateX(-27px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-8px) translateY(-50vh);
+    transform: translateX(-11px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-39px) translateY(-100vh);
+    transform: translateX(9px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(93) {
   animation-name: particle-93; }
@@ -2952,22 +2930,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-14px) translateY(-10vh);
+    transform: translateX(-33px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(26px) translateY(-20vh);
+    transform: translateX(12px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-9px) translateY(-30vh);
+    transform: translateX(35px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-25px) translateY(-40vh);
+    transform: translateX(15px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(24px) translateY(-50vh);
+    transform: translateX(16px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-23px) translateY(-100vh);
+    transform: translateX(-33px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(94) {
   animation-name: particle-94; }
@@ -2977,22 +2955,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-17px) translateY(-10vh);
+    transform: translateX(-1px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(22px) translateY(-20vh);
+    transform: translateX(6px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(-29px) translateY(-30vh);
+    transform: translateX(27px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(0px) translateY(-40vh);
+    transform: translateX(6px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-21px) translateY(-50vh);
+    transform: translateX(-34px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(15px) translateY(-100vh);
+    transform: translateX(13px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(95) {
   animation-name: particle-95; }
@@ -3002,22 +2980,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(40px) translateY(-10vh);
+    transform: translateX(8px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-8px) translateY(-20vh);
+    transform: translateX(-7px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(22px) translateY(-30vh);
+    transform: translateX(-8px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-10px) translateY(-40vh);
+    transform: translateX(7px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-21px) translateY(-50vh);
+    transform: translateX(25px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(38px) translateY(-100vh);
+    transform: translateX(-15px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(96) {
   animation-name: particle-96; }
@@ -3027,22 +3005,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(4px) translateY(-10vh);
+    transform: translateX(38px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-28px) translateY(-20vh);
+    transform: translateX(-7px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(33px) translateY(-30vh);
+    transform: translateX(-22px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(26px) translateY(-40vh);
+    transform: translateX(4px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(-26px) translateY(-50vh);
+    transform: translateX(-1px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(1px) translateY(-100vh);
+    transform: translateX(18px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(97) {
   animation-name: particle-97; }
@@ -3052,22 +3030,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(18px) translateY(-10vh);
+    transform: translateX(-2px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(3px) translateY(-20vh);
+    transform: translateX(-6px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(13px) translateY(-30vh);
+    transform: translateX(2px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(28px) translateY(-40vh);
+    transform: translateX(17px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(39px) translateY(-50vh);
+    transform: translateX(8px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(13px) translateY(-100vh);
+    transform: translateX(25px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(98) {
   animation-name: particle-98; }
@@ -3077,22 +3055,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-5px) translateY(-10vh);
+    transform: translateX(6px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(-23px) translateY(-20vh);
+    transform: translateX(5px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(24px) translateY(-30vh);
+    transform: translateX(-35px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(4px) translateY(-40vh);
+    transform: translateX(-38px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(35px) translateY(-50vh);
+    transform: translateX(36px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(-22px) translateY(-100vh);
+    transform: translateX(-29px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(99) {
   animation-name: particle-99; }
@@ -3102,22 +3080,22 @@ html, body {
     transform: translateX(0px) translateY(0vh);
     opacity: 1; }
   30% {
-    transform: translateX(-13px) translateY(-10vh);
+    transform: translateX(-10px) translateY(-10vh);
     opacity: 0.9; }
   40% {
-    transform: translateX(19px) translateY(-20vh);
+    transform: translateX(12px) translateY(-20vh);
     opacity: 0.8; }
   50% {
-    transform: translateX(1px) translateY(-30vh);
+    transform: translateX(21px) translateY(-30vh);
     opacity: 0.7; }
   60% {
-    transform: translateX(-18px) translateY(-40vh);
+    transform: translateX(-12px) translateY(-40vh);
     opacity: 0.6; }
   70% {
-    transform: translateX(5px) translateY(-50vh);
+    transform: translateX(-10px) translateY(-50vh);
     opacity: 0.5; }
   100% {
-    transform: translateX(34px) translateY(-100vh);
+    transform: translateX(17px) translateY(-100vh);
     opacity: 0; } }
 #ballon_effect span:nth-child(100) {
   animation-name: particle-100; }
