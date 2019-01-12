@@ -267,114 +267,124 @@ html,body{
         cursor: pointer;
       }
   }
-  .content_about{
-    max-width: 750px;
-    min-height: 800px;
+  .box_contact{
+    width: 500px;
+    min-height: 10px;
     overflow: hidden;
     margin: 0 auto;
-    position: relative;
-    @media only screen and (max-width: 836px){
-        width: 95%;
-        height: 950px;
+    margin-top: 110px;
+    h3{
+      padding-bottom: 20px;
     }
-    .tab_menu_about{
-      ul{
-      margin: 0;
-      padding: 0;
-      border-bottom: 1px solid rgba(204, 204, 204, 0.4196078431372549);
+    .box_name{
       width: 100%;
-      margin-top: 50px;
-        li{
-          list-style: none;
-          display: inline-block;
-          padding: 12px 0px;
-          margin-right: 20px;
-          cursor: pointer;
-          transition: 0.2s;
-          border-bottom: 2px solid white;
-          &.active_border{
-            color: rgba(96,106,116,.98);
-            border-bottom: 2px solid #2267AF;
-          }
-        }
-      }
-    }
-    .about_container{
-      width: 100%;
-      min-height: 200px;
+      height: 50px;
       overflow: hidden;
-      position: absolute;
-      display: none;
-      padding-top: 15px;
-      &.active_about{
-        display: inline;
-      }
-      h5{
-        width: 150px;
-        padding: 5px 0px;
-        border-bottom: 1px solid rgba(204, 204, 204, 0.26);
-        margin-top: 20px;
-      }
-      span{
-        background: #ccc;
-        border-radius: 10px;
-        padding: 1px 11px;
-        font-size: 12px;
-        color: #5D5858;
-      }
-      ul{
-        margin: 0;
-        padding: 0;
-        li{
-          list-style: none;
-          font-size: 13px;
-          color: rgb(93, 93, 93);
-          padding: 4px 0px;
+      border-radius: 50px;
+      background: #e6e6e6;
+      color: #666666;
+      margin-top: 10px;
+      .box_name_left{
+        width: 50px;
+        height: 50px; 
+        float: left;
+        position: relative;
           i{
-            width: 20px;
-            text-align: center;
-            font-size: 12px;
-          }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            cursor: pointer;
+            font-size: 17px;
+        }
+      }
+      .box_name_right{
+        width: 450px;
+        height: 50px;
+        box-sizing: border-box;
+        float: left;
+          input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 15px;
+            background: none;
+            &:focus{
+              outline: none;
+            }
         }
       }
     }
-    .about_personal{
-      padding-top: 35px;
+    .box_email{
       width: 100%;
-      min-height: 200px;
+      height: 50px;
+      background: #e6e6e6;
+      color: #666666;
+      border-radius: 50px;
+      margin-top: 10px;
       overflow: hidden;
-      position: absolute;
-      display: none;
-      &.active_about{
-        display: inline;
-      }
-      ul{
-        margin: 0;
-        margin-bottom: 16px;
-        margin-top: 16px;
-        padding: 0;
-        padding-bottom: 4px;
-        width: 150px;
-        border-bottom: 1px solid rgba(204, 204, 204, 0.26);
-        li{
-          list-style: none;
+      .box_name_left{
+        width: 50px;
+        height: 50px; 
+        float: left;
+        position: relative;
+          i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            cursor: pointer;
+            font-size: 17px;
         }
       }
-      p{
-        margin: 0;
-        font-size: 14px;
+      .box_name_right{
+        width: 450px;
+        height: 50px;
+        box-sizing: border-box;
+        float: left;
+          input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 15px;
+            background: none;
+            &:focus{
+              outline: none;
+            }
+        }
       }
     }
-    .about_project{
-      padding-top: 35px;
+    .box_message{
       width: 100%;
-      min-height: 200px;
+      height: 200px;
       overflow: hidden;
-      position: absolute;
-      display: none;
-      &.active_about{
-        display: inline;
+      background: #e6e6e6;
+      color: #666666;
+      border-radius: 25px;
+      margin-top: 10px;
+      textarea{
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-size: 15px;
+        background: none;
+        padding: 12px 15px;
+        &:focus{
+          outline: none;
+        }
       }
+    }
+    .box_send{
+      width: 100%;
+      height: 50px;
+      background: #846add;
+      text-align: center;
+      border-radius: 50px;
+      margin-top: 10px;
+      color: white;
+      font-weight: 800;
+      line-height: 50px;
+      cursor: pointer;
     }
   }
   .footer{

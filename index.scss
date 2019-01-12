@@ -199,6 +199,10 @@ html,body{
           &:hover{
             color: white;
           }
+          a{
+            text-decoration: none;
+            color: white;
+          }
           @media only screen and (max-width: 836px){
             line-height: 30px;
             padding-left: 5px;
