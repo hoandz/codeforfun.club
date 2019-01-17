@@ -618,7 +618,7 @@ html,body{
     position: absolute;
     color: white;
     right: 0;
-    font-size: 34px;
+    font-size: 25px;
     padding: 10px 13px;
     cursor: pointer;
   }
@@ -634,7 +634,11 @@ html,body{
     transition: 0.4s;
     @media only screen and (max-width: 950px){
       width: 460px;
-      height: 160px;
+      height: 140px;
+    }
+    @media only screen and (max-width: 320px){
+      width: 460px;
+      height: 100px;
     }
     ul{
       margin: 0;
@@ -642,7 +646,10 @@ html,body{
       text-align: center;
       line-height: 200px;
       @media only screen and (max-width: 950px){
-        line-height: 160px;
+        line-height: 140px;
+      }
+      @media only screen and (max-width: 320px){
+        line-height: 100px;
       }
       li{
         display: inline-block;
@@ -657,6 +664,10 @@ html,body{
           padding-left: 10px;
           @media only screen and (max-width: 375px){
             width: 250px;
+            height: 40px;
+          }
+          @media only screen and (max-width: 320px){
+            width: 210px;
             height: 40px;
           }
           &:focus{
