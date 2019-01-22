@@ -312,9 +312,13 @@ html,body{
           &:hover{
             color: white;
           }
-        }
-        .active_color{
-            color: white !important;
+          a{
+            text-decoration: none;
+            color: #b6b5b5;
+            &.active_color{
+              color: white !important;
+            }
+          }
         }
       }
     }

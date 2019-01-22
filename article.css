@@ -19,18 +19,17 @@ html, body {
     height: 70px;
     background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%);
     top: 0; }
-    @media only screen and (max-width: 860px) {
+    @media only screen and (max-width: 980px) {
       ._container .header_article {
         display: none; } }
     ._container .header_article .header-left {
-      width: 50%;
+      width: 57%;
       height: 100%;
-      float: left; }
+      float: left;
+      padding-left: 40px; }
       ._container .header_article .header-left ul {
-        margin: 0px 40px;
         padding: 0;
-        float: left;
-        width: 100%; }
+        float: left; }
         ._container .header_article .header-left ul li {
           display: inline-block;
           list-style: none;
@@ -44,10 +43,13 @@ html, body {
           padding-right: 15px; }
           ._container .header_article .header-left ul li a {
             text-decoration: none;
-            color: white; }
+            color: white;
+            opacity: 0.8;
+            -webkit-transition: 0.4s;
+            transition: 0.4s; }
+            ._container .header_article .header-left ul li a:hover {
+              opacity: 1; }
           ._container .header_article .header-left ul li:hover {
-            opacity: 1; }
-          ._container .header_article .header-left ul li:nth-child(1) {
             opacity: 1; }
           ._container .header_article .header-left ul li img {
             width: 40px;
@@ -55,7 +57,7 @@ html, body {
             border-radius: 50%;
             opacity: none; }
     ._container .header_article .header-right {
-      width: 50%;
+      width: 43%;
       height: 100%;
       float: left; }
       ._container .header_article .header-right ul {
@@ -128,7 +130,7 @@ html, body {
     background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%);
     position: absolute;
     display: none; }
-    @media only screen and (max-width: 860px) {
+    @media only screen and (max-width: 980px) {
       ._container .header_mobile {
         display: inline; } }
     ._container .header_mobile .icon_menu {
@@ -623,6 +625,7 @@ html, body {
     min-height: 200px;
     overflow: hidden; }
     .nav_menu_mobile .menu_main_menu_mobile ul {
+      margin: 0;
       padding: 0;
       padding-left: 17px; }
       .nav_menu_mobile .menu_main_menu_mobile ul li {

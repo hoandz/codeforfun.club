@@ -20,18 +20,17 @@ html,body{
     height: 70px;
     background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
     top: 0;
-    @media only screen and (max-width: 860px){
+    @media only screen and (max-width: 980px){
       display: none;
     }
     .header-left{
-      width: 50%;
+      width: 57%;
       height: 100%;
       float: left;
+      padding-left: 40px;
       ul{
-      margin: 0px 40px;
       padding: 0;
       float: left;
-      width: 100%;
         li{
           display: inline-block;
           list-style: none;
@@ -45,11 +44,13 @@ html,body{
           a{
             text-decoration: none;
             color: white;
+            opacity: 0.8;
+            transition: 0.4s;
+            &:hover{
+              opacity: 1;
+            }
           }
           &:hover{
-            opacity: 1;
-          }
-          &:nth-child(1){
             opacity: 1;
           }
           img{
@@ -62,7 +63,7 @@ html,body{
       }
     }
     .header-right{
-      width: 50%;
+      width: 43%;
       height: 100%;
       float: left;
       ul{
@@ -143,7 +144,7 @@ html,body{
     background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%);
     position: absolute;
     display: none;
-    @media only screen and (max-width: 860px){
+    @media only screen and (max-width: 980px){
       display: inline;
     }
     .icon_menu{
@@ -680,6 +681,7 @@ html,body{
     min-height: 200px;
     overflow: hidden;
     ul{
+      margin: 0;
       padding: 0;
       padding-left: 17px;
       li{
