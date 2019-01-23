@@ -39,15 +39,13 @@ html,body{
           cursor: pointer;
           color: white;
           transition: 0.4s;
-          opacity: 0.8;
-          padding-right: 15px;
+          padding-right: 10px;
           a{
             text-decoration: none;
-            color: white;
-            opacity: 0.8;
+            color: #ebebeb;
             transition: 0.4s;
             &:hover{
-              opacity: 1;
+              color: white;
             }
           }
           &:hover{
@@ -343,7 +341,6 @@ html,body{
     }
     .article_content_body{
       width: 75%;
-      font-size: 21px;
       min-height: 300px;
       overflow: hidden;
       margin: 0 auto;
@@ -637,14 +634,17 @@ html,body{
       li{
         list-style: none;
         display: inline-block;
-        color: white;
+        color: #ebebeb;
         padding-right: 10px;
         line-height: 50px;
         cursor: pointer;
-        opacity: 0.8;
         transition: 0.4s;
         &:hover{
-          opacity: 1;
+          color: white;
+        }
+        a{
+          text-decoration: none;
+          color: white;
         }
       }
     }
