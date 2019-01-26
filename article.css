@@ -314,13 +314,13 @@ html, body {
           padding: 20px 10px; } }
   ._container .footer {
     width: 100%;
-    min-height: 400px;
+    min-height: 80px;
     overflow: hidden;
     bottom: 0;
     margin-top: 100px; }
     ._container .footer .post_footer {
       width: 100%;
-      min-height: 300px;
+      min-height: 320px;
       overflow: hidden;
       background: rgba(232, 232, 232, 0.631372549);
       padding-top: 35px; }
@@ -444,76 +444,13 @@ html, body {
                     margin-left: 4px; }
     ._container .footer .site-footer {
       max-width: 100%;
-      background: black;
-      height: 100px;
+      background: linear-gradient(135deg, #000000 0%, #434343 100%);
+      height: 80px;
       bottom: 0;
-      margin: 0 auto; }
-      ._container .footer .site-footer .site-footer-left {
-        width: 50%;
-        float: left;
-        height: 100px;
-        font-size: 14px;
-        opacity: .8;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        color: white;
-        padding-left: 13px; }
-        @media only screen and (max-width: 650px) {
-          ._container .footer .site-footer .site-footer-left {
-            width: 100%;
-            height: 50px;
-            padding: 0; } }
-        ._container .footer .site-footer .site-footer-left .text-footer-left {
-          line-height: 100px; }
-          @media only screen and (max-width: 650px) {
-            ._container .footer .site-footer .site-footer-left .text-footer-left {
-              text-align: center;
-              line-height: 50px; } }
-          ._container .footer .site-footer .site-footer-left .text-footer-left a {
-            color: white; }
-            ._container .footer .site-footer .site-footer-left .text-footer-left a:hover {
-              color: white; }
-      ._container .footer .site-footer .site-footer-right {
-        width: 50%;
-        float: left;
-        height: 100px;
-        font-size: 14px;
-        opacity: .8;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        padding-right: 13px; }
-        @media only screen and (max-width: 650px) {
-          ._container .footer .site-footer .site-footer-right {
-            width: 100%;
-            height: 50px;
-            padding: 0; } }
-        ._container .footer .site-footer .site-footer-right ul {
-          padding: 0;
-          margin: 0;
-          text-align: right; }
-          @media only screen and (max-width: 650px) {
-            ._container .footer .site-footer .site-footer-right ul {
-              padding: 0;
-              margin: 0;
-              text-align: center; } }
-          ._container .footer .site-footer .site-footer-right ul li {
-            list-style: none;
-            display: inline;
-            padding-left: 13px;
-            line-height: 100px;
-            cursor: pointer;
-            opacity: .8;
-            -webkit-transition: 0.4s;
-            transition: 0.4s;
-            color: white; }
-            @media only screen and (max-width: 650px) {
-              ._container .footer .site-footer .site-footer-right ul li {
-                list-style: none;
-                display: inline;
-                line-height: 50px;
-                padding: 0px 2px; } }
-            ._container .footer .site-footer .site-footer-right ul li:hover {
-              opacity: 1; }
+      text-align: center;
+      line-height: 80px;
+      color: #ffffffbd;
+      font-size: 13px; }
   ._container .form_search {
     width: 100%;
     height: 100%;
@@ -757,7 +694,7 @@ html, body {
         display: inline-block;
         list-style: none;
         color: white; }
-        .form_sub .form_sub_jr ul li input {
+        .form_sub .form_sub_jr ul li .email_sub {
           width: 285px;
           height: 50px;
           border: none;
@@ -765,28 +702,28 @@ html, body {
           border-top-left-radius: 12px;
           padding-left: 10px; }
           @media only screen and (max-width: 375px) {
-            .form_sub .form_sub_jr ul li input {
+            .form_sub .form_sub_jr ul li .email_sub {
               width: 250px;
               height: 40px; } }
           @media only screen and (max-width: 320px) {
-            .form_sub .form_sub_jr ul li input {
+            .form_sub .form_sub_jr ul li .email_sub {
               width: 210px;
               height: 40px; } }
-          .form_sub .form_sub_jr ul li input:focus {
+          .form_sub .form_sub_jr ul li .email_sub:focus {
             outline: none; }
-          .form_sub .form_sub_jr ul li input::-webkit-input-placeholder {
+          .form_sub .form_sub_jr ul li .email_sub::-webkit-input-placeholder {
             font-weight: 600;
             color: #333; }
-          .form_sub .form_sub_jr ul li input:-ms-input-placeholder {
+          .form_sub .form_sub_jr ul li .email_sub:-ms-input-placeholder {
             font-weight: 600;
             color: #333; }
-          .form_sub .form_sub_jr ul li input::-ms-input-placeholder {
+          .form_sub .form_sub_jr ul li .email_sub::-ms-input-placeholder {
             font-weight: 600;
             color: #333; }
-          .form_sub .form_sub_jr ul li input::placeholder {
+          .form_sub .form_sub_jr ul li .email_sub::placeholder {
             font-weight: 600;
             color: #333; }
-        .form_sub .form_sub_jr ul li button {
+        .form_sub .form_sub_jr ul li #onclick_button_sub {
           height: 50px;
           background: #09f;
           border: none;
@@ -795,9 +732,9 @@ html, body {
           border-bottom-right-radius: 12px;
           cursor: pointer; }
           @media only screen and (max-width: 375px) {
-            .form_sub .form_sub_jr ul li button {
+            .form_sub .form_sub_jr ul li #onclick_button_sub {
               height: 40px; } }
-          .form_sub .form_sub_jr ul li button:focus {
+          .form_sub .form_sub_jr ul li #onclick_button_sub:focus {
             outline: none; }
 
 #back-to-top {

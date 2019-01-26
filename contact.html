@@ -27,7 +27,7 @@
     <div class="foreground">
       <div class="follow">
         <ul>
-          <li><strong>23</strong>subscribers</li>
+          <li><strong id="numberSubHtml" style="margin: 0"></strong>subscribers</li>
           <li><span id="subscribe_form">Subscribe</span></li>
           <li><span><a href="/about.html">About Me</a></span></li>
         </ul>
@@ -62,19 +62,7 @@
     </div>
     <div class="footer">
       <div class="site-footer">
-        <div class="site-footer-left">
-          <div class="text-footer-left">
-            <a href="#">codeforfun</a><span>@2018</span>
-          </div>
-        </div>
-        <div class="site-footer-right">
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Github</li>
-            <li>About me</li>
-          </ul>
-        </div>
+        @2019 - CodeForFun.Club. All Right Reserved.
       </div>
     </div>
   </div>
@@ -83,14 +71,17 @@
     <h3>Subscribe to Codeforfun.club</h3>
     <p>Stay up to date! Get all the latest & greatest posts delivered straight to your inbox</p>
     <div class="form_sub_jr">
-      <ul>
-        <li><input type="text" placeholder="Enter your email"></li>
-        <li><button>Subscribe</button></li>
-      </ul>
+      <form name="form1" id="form1">
+        <ul>
+          <li><input type="text" name="email" id="email_sub" class="email_sub" placeholder="Enter your email" value=""></li>
+          <li><input type="button" name="check" id="onclick_button_sub" value="Subscribe""></li>
+        </ul>        
+      </form>
     </div>
   </div>
   <a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
   <script src="script.js"></script>
   <script src="getApi.js"></script>
+  <script src="subscribe.js"></script>
 </body>
 </html>

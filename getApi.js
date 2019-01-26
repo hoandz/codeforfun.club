@@ -1,4 +1,4 @@
-var HostUrl = "http://admin.codeforfun.club/";
+var HostUrl = "https://admin.codeforfun.club/";
 var ApiUrl = HostUrl + "api/";
 var ImgHost = HostUrl + "storage/";
 
@@ -6,6 +6,7 @@ var ImgHost = HostUrl + "storage/";
 var ApiGetSiteSetting = ApiUrl + "get_site_setting";
 var ApiGetAllPosts = ApiUrl + "get_all_posts";
 var ApiGetPostDetail = ApiUrl + "get_post_detail?slug=lorem-ipsum-post";
+var ApiAddSubscribe = ApiUrl + "add_subscriber?email=ahihyrfhgi@gmail.com";
 
 $(document).ready(function(){
   console.log('Load Page');
@@ -26,16 +27,23 @@ $(document).ready(function(){
     //load setting
     var settingPrf = responseData.data.settings;
     var profilHtml = '';
-    var avatarHtml = '';
     for(var i = 0; i < settingPrf.length; i++){
       if(settingPrf[i].key == 'site.description'){
         profilHtml += `<p class="dia_diem">Hanoi, VietNam</p><p class="status">`+ settingPrf[i].value+`<a href="/about.html"> xem thêm</a></p>`;
-      }else if(settingPrf[i].key == 'site.logo'){
+      }
+    }
+    var avatarHtml = '';
+    for(var i = 0; i < settingPrf.length; i++){
+      if(settingPrf[i].key == 'site.logo'){
         avatarHtml += `<a href="https://codeforfun.club/">
-        <img src="`+settingPrf[i].type+`" alt="" />
+        <img src="`+ ImgHost + settingPrf[i].value+`" alt="" />
       </a>`;
       }
     }
+    //đếm subscribe
+    var numberSub = responseData.data.total_subscriber;
+    $('#numberSubHtml').html(`<strong>`+numberSub+`</strong>`);
+    //end đếm subscribe
     $('#profile_setting').html(profilHtml);
     $('#avatar_setting').html(avatarHtml);
     $('#avatar-article-header').html(avatarHtml);
@@ -48,7 +56,6 @@ $(document).ready(function(){
   $.get(ApiGetAllPosts, function(responseData){
     var posts = responseData.data.data;
     var postHtml = '';
-    console.log(posts);
     for(var i = 0; i < posts.length; i++){
       postHtml += `<div class="post">
                       <div class="img_post">
@@ -79,7 +86,6 @@ $(document).ready(function(){
 
   //load chi tiet bai viet
   $.get(ApiGetPostDetail, function(responseData){
-    console.log(responseData);
     var articleContent = responseData.data;
     var articleHtml = `<div class="content_between">
         <div class="content_between_left">
@@ -102,4 +108,10 @@ $(document).ready(function(){
     $('#test_api').html(articleHtml);
   });
   //end load chi tiet bai viet
+
+  // xu ly subscribe
+  $.get(ApiAddSubscribe, function(responseData){
+    
+  });
+  // end xu ly subscribe
 });
