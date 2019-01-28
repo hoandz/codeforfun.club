@@ -325,12 +325,10 @@ html, body {
     margin-top: 100px; }
     ._container .footer .border_baiviet_footer {
       margin-left: 40px;
-      padding: 3px 11px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      font-size: 12px;
-      background: red;
-      color: white; }
+      padding: 2px 2px;
+      font-size: 13px;
+      color: black;
+      border-left: 2px solid red; }
     ._container .footer .post_footer {
       width: 100%;
       min-height: 320px;
