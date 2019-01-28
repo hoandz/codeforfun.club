@@ -69,4 +69,41 @@ $(document).ready(function(){
     $('#test_api').html(articleHtml);
   });
   //end load chi tiet bai viet
+  //load get_all_posts
+  $.get(ApiGetAllPosts, function(responseData){
+    var posts = responseData.data.data;
+    var postHtml = '';
+    var result = 0;
+    for(var i = 0; i < posts.length; i++){
+      postHtml += `<div class="post">
+                      <div class="img_post">
+                        <a href="article.html?` + posts[i].slug + `">
+                          <div class="background_post" style="background-image:url('`+ImgHost + posts[i].image+`')"></div>
+                          <div class="content_post">
+                            <p>`+posts[i].excerpt+`</p>
+                            <span>Real More</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer_post">
+                        <div class="title_post">
+                          <h2>`+posts[i].title+`</h2>
+                        </div>
+                        <div class="view_post">
+                          <ul>
+                            <li><i class="far fa-eye icon_eye"></i><span>`+posts[i].view+`</span></li>
+                            <li><i class="fas fa-comment-alt"></i><span>0</span></li>
+                            <li><i class="fas fa-heart"></i><span>`+posts[i].like+`</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>`;
+      result++;
+      if(result == 3){
+        break;
+      }
+    }
+    $('#allPostHtml').html(postHtml);
+  });
+  //end load get_all_posts
 });

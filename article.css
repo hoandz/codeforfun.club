@@ -323,6 +323,14 @@ html, body {
     overflow: hidden;
     bottom: 0;
     margin-top: 100px; }
+    ._container .footer .border_baiviet_footer {
+      margin-left: 40px;
+      padding: 3px 11px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-size: 12px;
+      background: red;
+      color: white; }
     ._container .footer .post_footer {
       width: 100%;
       min-height: 320px;
