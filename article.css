@@ -286,11 +286,11 @@ html, body {
       @media only screen and (max-width: 1300px) {
         ._container .content_article .image_article_content {
           width: 100%;
-          height: 420px; } }
+          height: 520px; } }
       @media only screen and (max-width: 860px) {
         ._container .content_article .image_article_content {
           width: 100%;
-          height: 350px; } }
+          height: 400px; } }
       @media only screen and (max-width: 660px) {
         ._container .content_article .image_article_content {
           height: 280px;

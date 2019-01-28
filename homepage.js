@@ -6,7 +6,7 @@ $(document).ready(function(){
     
     //phan hien thi categories
     var categories = responseData.data.categories;
-    var categoriesHtml = '<li><a href="" class="active_color">Trang chủ</a></li>';
+    var categoriesHtml = '<li><a href="https://codeforfun.club/" class="active_color">Trang chủ</a></li>';
     for (var i = 0; i < categories.length; i++) {
       categoriesHtml += `<li><a href="category/` + categories[i].slug + `" >` + categories[i].name + `</a></li>`;
     }
