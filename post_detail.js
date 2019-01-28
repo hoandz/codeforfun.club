@@ -1,13 +1,3 @@
-var HostUrl = "https://admin.codeforfun.club/";
-var ApiUrl = HostUrl + "api/";
-var ImgHost = HostUrl + "storage/";
-
-// API
-var ApiGetSiteSetting = ApiUrl + "get_site_setting";
-var ApiGetAllPosts = ApiUrl + "get_all_posts";
-var ApiGetPostDetail = ApiUrl + "get_post_detail?slug=lorem-ipsum-post";
-var ApiAddSubscribe = ApiUrl + "add_subscriber?email=ahihyrfhgi@gmail.com";
-
 $(document).ready(function(){
   console.log('Load Page');
   //Load page
@@ -51,43 +41,12 @@ $(document).ready(function(){
     //end load setting
   });
   //and load get_site_setting
-
-  //load get_all_posts
-  $.get(ApiGetAllPosts, function(responseData){
-    var posts = responseData.data.data;
-    var postHtml = '';
-    for(var i = 0; i < posts.length; i++){
-      postHtml += `<div class="post">
-                      <div class="img_post">
-                        <a href="article.html#` + posts[i].slug + `">
-                          <div class="background_post" style="background-image:url('`+ImgHost + posts[i].image+`')"></div>
-                          <div class="content_post">
-                            <p>`+posts[i].excerpt+`</p>
-                            <span>Real More</span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="footer_post">
-                        <div class="title_post">
-                          <h2>`+posts[i].title+`</h2>
-                        </div>
-                        <div class="view_post">
-                          <ul>
-                            <li><i class="far fa-eye icon_eye"></i><span>`+posts[i].view+`</span></li>
-                            <li><i class="fas fa-comment-alt"></i><span>200</span></li>
-                            <li><i class="fas fa-heart"></i><span>`+posts[i].like+`</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>`;
-    }
-    $('#allPostHtml').html(postHtml);
-  });
-  //end load get_all_posts
-  //end load page
-
-  //load chi tiet bai viet
-  $.get(ApiGetPostDetail, function(responseData){
+  var tokens = location.href.split('?');
+  // TODO Co the loi
+  var post_slug = tokens[1];
+  console.log("Slug: " + post_slug);
+  var GetPostDetailUrl = ApiGetPostDetail + post_slug;
+  $.get(GetPostDetailUrl, function(responseData){
     var articleContent = responseData.data;
     var articleHtml = `<div class="content_between">
         <div class="content_between_left">
@@ -110,10 +69,4 @@ $(document).ready(function(){
     $('#test_api').html(articleHtml);
   });
   //end load chi tiet bai viet
-
-  // xu ly subscribe
-  $.get(ApiAddSubscribe, function(responseData){
-    
-  });
-  // end xu ly subscribe
 });

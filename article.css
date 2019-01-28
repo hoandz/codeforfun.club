@@ -271,11 +271,14 @@ html, body {
             font-size: 14px;
             margin-top: 5px;
             margin-bottom: 0px; }
+            @media only screen and (max-width: 860px) {
+              ._container .content_article .content_between .content_between_left .profile_content_between_left p {
+                font-size: 16px; } }
     ._container .content_article .title_article {
       margin-top: 25px; }
     ._container .content_article .image_article_content {
-      width: 80%;
-      height: 500px;
+      width: 100%;
+      height: 800px;
       margin: 0 auto;
       -webkit-transition: 0.4s;
       transition: 0.4s;
@@ -312,6 +315,8 @@ html, body {
         ._container .content_article .article_content_body {
           width: 100%;
           padding: 20px 10px; } }
+      ._container .content_article .article_content_body p {
+        font-size: 20px; }
   ._container .footer {
     width: 100%;
     min-height: 80px;

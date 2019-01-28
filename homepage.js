@@ -1,13 +1,3 @@
-var HostUrl = "https://admin.codeforfun.club/";
-var ApiUrl = HostUrl + "api/";
-var ImgHost = HostUrl + "storage/";
-
-// API
-var ApiGetSiteSetting = ApiUrl + "get_site_setting";
-var ApiGetAllPosts = ApiUrl + "get_all_posts";
-var ApiGetPostDetail = ApiUrl + "get_post_detail?slug=lorem-ipsum-post";
-var ApiAddSubscribe = ApiUrl + "add_subscriber?email=ahihyrfhgi@gmail.com";
-
 $(document).ready(function(){
   console.log('Load Page');
   //Load page
@@ -59,7 +49,7 @@ $(document).ready(function(){
     for(var i = 0; i < posts.length; i++){
       postHtml += `<div class="post">
                       <div class="img_post">
-                        <a href="article.html#` + posts[i].slug + `">
+                        <a href="article.html?` + posts[i].slug + `">
                           <div class="background_post" style="background-image:url('`+ImgHost + posts[i].image+`')"></div>
                           <div class="content_post">
                             <p>`+posts[i].excerpt+`</p>
@@ -74,7 +64,7 @@ $(document).ready(function(){
                         <div class="view_post">
                           <ul>
                             <li><i class="far fa-eye icon_eye"></i><span>`+posts[i].view+`</span></li>
-                            <li><i class="fas fa-comment-alt"></i><span>200</span></li>
+                            <li><i class="fas fa-comment-alt"></i><span>0</span></li>
                             <li><i class="fas fa-heart"></i><span>`+posts[i].like+`</span></li>
                           </ul>
                         </div>
@@ -85,35 +75,4 @@ $(document).ready(function(){
   });
   //end load get_all_posts
   //end load page
-
-  //load chi tiet bai viet
-  $.get(ApiGetPostDetail, function(responseData){
-    var articleContent = responseData.data;
-    var articleHtml = `<div class="content_between">
-        <div class="content_between_left">
-          <div class="image_content_between">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/skytsunami.png" alt="">
-          </div>
-          <div class="profile_content_between_left">
-            <span>@michaelhoan</span>
-            <p>Published `+articleContent.updated_at+`</p>
-          </div>
-        </div>
-        <h2 class="title_article">`+articleContent.title+`</h2>
-        <div class="image_article_content">
-          <img src="`+ ImgHost + articleContent.image+`" alt="">
-        </div>
-        <div class="article_content_body">
-          `+articleContent.body+`
-        </div>
-      </div>`;
-    $('#test_api').html(articleHtml);
-  });
-  //end load chi tiet bai viet
-
-  // xu ly subscribe
-  $.get(ApiAddSubscribe, function(responseData){
-    
-  });
-  // end xu ly subscribe
 });
