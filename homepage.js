@@ -13,7 +13,6 @@ $(document).ready(function(){
     $('#site-category').html(categoriesHtml);
     $('#site-category-article').html(categoriesHtml);
     //ket thuc phan hien thi categories
-
     //load setting
     var settingPrf = responseData.data.settings;
     var profilHtml = '';
@@ -22,6 +21,18 @@ $(document).ready(function(){
         profilHtml += `<p class="dia_diem">Hanoi, VietNam</p><p class="status">`+ settingPrf[i].value+`<a href="/about.html"> xem thêm</a></p>`;
       }
     }
+    //categories_ref
+    var categoriesHtml = '';
+    for(var i = 0; i < settingPrf.length; i++){
+      if(settingPrf[i].key == 'site.refs'){
+        var Json_categories_ref = JSON.parse(settingPrf[i].value);
+        for(var j = 0; j < Json_categories_ref.length; j++){
+          categoriesHtml += `<li><a href="`+Json_categories_ref[j].url+`">`+Json_categories_ref[j].name+`</a></li>`;
+        }
+      }
+    }
+    $('#categories_ref_setting').html(categoriesHtml);
+    //end categories_ref
     var avatarHtml = '';
     for(var i = 0; i < settingPrf.length; i++){
       if(settingPrf[i].key == 'site.logo'){
@@ -47,7 +58,9 @@ $(document).ready(function(){
     var posts = responseData.data.data;
     var postHtml = '';
     for(var i = 0; i < posts.length; i++){
-      postHtml += `<div class="post">
+      if(posts[i].like == null){
+        posts[i].like = 0;
+        postHtml += `<div class="post">
                       <div class="img_post">
                         <a href="article.html?` + posts[i].slug + `">
                           <div class="background_post" style="background-image:url('`+ImgHost + posts[i].image+`')"></div>
@@ -70,6 +83,31 @@ $(document).ready(function(){
                         </div>
                       </div>
                     </div>`;
+      }else{
+        postHtml += `<div class="post">
+                      <div class="img_post">
+                        <a href="article.html?` + posts[i].slug + `">
+                          <div class="background_post" style="background-image:url('`+ImgHost + posts[i].image+`')"></div>
+                          <div class="content_post">
+                            <p>`+posts[i].excerpt+`</p>
+                            <span>Real More</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer_post">
+                        <div class="title_post">
+                          <h2>`+posts[i].title+`</h2>
+                        </div>
+                        <div class="view_post">
+                          <ul>
+                            <li><i class="far fa-eye icon_eye"></i><span>`+posts[i].view+`</span></li>
+                            <li><i class="fas fa-comment-alt"></i><span>0</span></li>
+                            <li><i class="fas fa-heart"></i><span>`+posts[i].like+`</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>`;
+      }
     }
     $('#allPostHtml').html(postHtml);
   });

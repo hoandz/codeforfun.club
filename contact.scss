@@ -145,6 +145,7 @@ html,body{
           &:hover{
             color: white;
           }
+          
           @media only screen and (max-width: 836px){
             line-height: 30px;
           }
@@ -207,7 +208,11 @@ html,body{
           transition: 0.4s;
           a{
             text-decoration: none;
-            color: white;
+            color: #dddddd;
+            transition: 0.4s;
+            &:hover{
+              color: white;
+            }
           }
           &:hover{
             color: white;
