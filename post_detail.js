@@ -8,7 +8,7 @@ $(document).ready(function(){
     var categories = responseData.data.categories;
     var categoriesHtml = '<li><a href="https://codeforfun.club/" class="active_color">Trang chủ</a></li>';
     for (var i = 0; i < categories.length; i++) {
-      categoriesHtml += `<li><a href="category/` + categories[i].slug + `" >` + categories[i].name + `</a></li>`;
+      categoriesHtml += `<li><a href="https://codeforfun.club/">` + categories[i].name + `</a></li>`;
     }
     $('#site-category').html(categoriesHtml);
     $('#site-category-article').html(categoriesHtml);
