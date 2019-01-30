@@ -5,13 +5,33 @@ $(document).ready(function(){
   $.get(ApiGetSiteSetting, function(responseData) {
     //phan hien thi categories
     var categories = responseData.data.categories;
-    var categoriesHtml = '';
-    // <li><a href="https://codeforfun.club/" class="active_color">Trang chủ</a></li>
+    var categoriesHtml = '<li id="Load-trang-chu-item" class="active_color">Trang chủ</li>';
     for (var i = 0; i < categories.length; i++) {
       categoriesHtml += `<li id="Load-` + categories[i].slug + `-item">`+ categories[i].name + `</li>`;
     }
     $('#site-category').html(categoriesHtml);
     $('#site-category-article').html(categoriesHtml);
+      // (*** Xu ly menu ***)
+      $('.profile-nav ul li').click(function(){
+        $('.profile-nav ul li').removeClass('active_color');
+        $(this).addClass('active_color');
+      });
+      // (*** End Xu ly menu ***)
+    //load trang chu
+    $("#Load-trang-chu-item").on('click',function(event){
+      loadTrangChu();
+    })
+    //end load trang chu
+    //load notes
+    $("#Load-notes-item").on('click',function(event){
+      loadnotes();
+    })
+    //end load notes
+    //load code
+    $("#Load-code-item").on('click',function(event){
+      loadcode();
+    })
+    //end load code
     //ket thuc phan hien thi categories
     //load setting
     var settingPrf = responseData.data.settings;
@@ -54,68 +74,99 @@ $(document).ready(function(){
   //and load get_site_setting
 
   //load get_all_posts
-  $.get(ApiGetAllPosts, function(responseData){
-    var posts = responseData.data.data;
-    var postHtml = '';
-    for(var i = 0; i < posts.length; i++){
-      if(posts[i].like == null){
-        posts[i].like = 0;
-        postHtml += `<div class="post">
-                      <div class="img_post">
-                        <a href="article.html?` + posts[i].slug + `">
-                          <div class="background_post" style="background-image:url('`+ImgHost + posts[i].image+`')"></div>
-                          <div class="content_post">
-                            <p>`+posts[i].excerpt+`</p>
-                            <span>Real More</span>
+  function printPost(postItems){
+      var postHtml = '';
+      for(var i = 0; i < postItems.length; i++){
+        if(postItems[i].like == null){
+          postItems[i].like = 0;
+          postHtml += `<div class="post">
+                        <div class="img_post">
+                          <a href="article.html?` + postItems[i].slug + `">
+                            <div class="background_post" style="background-image:url('`+ImgHost + postItems[i].image+`')"></div>
+                            <div class="content_post">
+                              <p>`+postItems[i].excerpt+`</p>
+                              <span>Real More</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="footer_post">
+                          <div class="title_post">
+                            <h2>`+postItems[i].title+`</h2>
                           </div>
-                        </a>
-                      </div>
-                      <div class="footer_post">
-                        <div class="title_post">
-                          <h2>`+posts[i].title+`</h2>
-                        </div>
-                        <div class="view_post">
-                          <ul>
-                            <li><i class="far fa-eye icon_eye"></i><span>`+posts[i].view+`</span></li>
-                            <li><i class="fas fa-comment-alt"></i><span>0</span></li>
-                            <li><i class="fas fa-heart"></i><span>`+posts[i].like+`</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>`;
-      }else{
-        postHtml += `<div class="post">
-                      <div class="img_post">
-                        <a href="article.html?` + posts[i].slug + `">
-                          <div class="background_post" style="background-image:url('`+ImgHost + posts[i].image+`')"></div>
-                          <div class="content_post">
-                            <p>`+posts[i].excerpt+`</p>
-                            <span>Real More</span>
+                          <div class="view_post">
+                            <ul>
+                              <li><i class="far fa-eye icon_eye"></i><span>`+postItems[i].view+`</span></li>
+                              <li><i class="fas fa-comment-alt"></i><span>0</span></li>
+                              <li><i class="fas fa-heart"></i><span>`+postItems[i].like+`</span></li>
+                            </ul>
                           </div>
-                        </a>
-                      </div>
-                      <div class="footer_post">
-                        <div class="title_post">
-                          <h2>`+posts[i].title+`</h2>
                         </div>
-                        <div class="view_post">
-                          <ul>
-                            <li><i class="far fa-eye icon_eye"></i><span>`+posts[i].view+`</span></li>
-                            <li><i class="fas fa-comment-alt"></i><span>0</span></li>
-                            <li><i class="fas fa-heart"></i><span>`+posts[i].like+`</span></li>
-                          </ul>
+                      </div>`;
+        }else{
+          postHtml += `<div class="post">
+                        <div class="img_post">
+                          <a href="article.html?` + postItems[i].slug + `">
+                            <div class="background_post" style="background-image:url('`+ImgHost + postItems[i].image+`')"></div>
+                            <div class="content_post">
+                              <p>`+postItems[i].excerpt+`</p>
+                              <span>Real More</span>
+                            </div>
+                          </a>
                         </div>
-                      </div>
-                    </div>`;
+                        <div class="footer_post">
+                          <div class="title_post">
+                            <h2>`+postItems[i].title+`</h2>
+                          </div>
+                          <div class="view_post">
+                            <ul>
+                              <li><i class="far fa-eye icon_eye"></i><span>`+postItems[i].view+`</span></li>
+                              <li><i class="fas fa-comment-alt"></i><span>0</span></li>
+                              <li><i class="fas fa-heart"></i><span>`+postItems[i].like+`</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>`;
+        }
       }
-    }
-    $('#allPostHtml').html(postHtml);
-  });
+      $('#allPostHtml').html(postHtml);
+  }
+  // printPost();
+  function loadTrangChu(){
+    $.get(ApiGetAllPosts, function(responseData){
+      var posts = responseData.data.data;
+      printPost(posts);
+    });
+  }
+  loadTrangChu()
   //end load get_all_posts
-  //end load page
   //load notes
-  $("#Load-notes-item").on('click',function(event){
-    console.log("asdfasdlkfj");
-  })
+  function loadnotes(){
+    $.get(ApiGetAllPosts, function(responseData){
+      var postsnotes = responseData.data.data;
+      var result = [];
+      for(var i = 0; i < postsnotes.length; i++){
+        if(postsnotes[i].category_id == 5){
+          result.push(postsnotes[i]);
+        }
+      }
+      printPost(result);
+    });
+  }
   //end load notes
+  //load code
+  function loadcode(){
+    $.get(ApiGetAllPosts, function(responseData){
+      var postsnotes = responseData.data.data;
+      var result = [];
+      for(var i = 0; i < postsnotes.length; i++){
+        if(postsnotes[i].category_id == 6){
+          result.push(postsnotes[i]);
+        }
+      }
+      printPost(result);
+    });
+  }
+  //end load code
+
+  //end load page
 });

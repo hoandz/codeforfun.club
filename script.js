@@ -85,11 +85,4 @@ $(document).ready(function(){
 
 
   //end xu ly menu about me
-    // (*** Xu ly menu ***)
-  // $('.profile-nav ul li').click(function(){
-  //   // $('.profile-nav ul li').removeClass('active_color');
-  //   // $(this).addClass('active_color');
-  //   console.log("ahihi");
-  // });
-  // (*** End Xu ly menu ***)
 });
