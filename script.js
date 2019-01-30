@@ -44,13 +44,6 @@ $(document).ready(function(){
     });
   // (*** End Xu Ly Backtotop ***)
 
-  // (*** Xu ly menu ***)
-  $('.profile-nav ul li').click(function(){
-    $('.profile-nav ul li').removeClass('active_color');
-    $(this).addClass('active_color');
-  });
-  // (*** End Xu ly menu ***)
-
   //xu ly form sub
   $('#subscribe_form').click(function(){
     $('.form_sub').addClass('active_form_sub');
@@ -92,4 +85,11 @@ $(document).ready(function(){
 
 
   //end xu ly menu about me
+    // (*** Xu ly menu ***)
+  // $('.profile-nav ul li').click(function(){
+  //   // $('.profile-nav ul li').removeClass('active_color');
+  //   // $(this).addClass('active_color');
+  //   console.log("ahihi");
+  // });
+  // (*** End Xu ly menu ***)
 });

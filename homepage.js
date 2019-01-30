@@ -3,12 +3,12 @@ $(document).ready(function(){
   //Load page
   //load get_site_setting
   $.get(ApiGetSiteSetting, function(responseData) {
-    
     //phan hien thi categories
     var categories = responseData.data.categories;
-    var categoriesHtml = '<li><a href="https://codeforfun.club/" class="active_color">Trang chủ</a></li>';
+    var categoriesHtml = '';
+    // <li><a href="https://codeforfun.club/" class="active_color">Trang chủ</a></li>
     for (var i = 0; i < categories.length; i++) {
-      categoriesHtml += `<li><a href="category/` + categories[i].slug + `" >` + categories[i].name + `</a></li>`;
+      categoriesHtml += `<li id="Load-` + categories[i].slug + `-item">`+ categories[i].name + `</li>`;
     }
     $('#site-category').html(categoriesHtml);
     $('#site-category-article').html(categoriesHtml);
@@ -113,4 +113,9 @@ $(document).ready(function(){
   });
   //end load get_all_posts
   //end load page
+  //load notes
+  $("#Load-notes-item").on('click',function(event){
+    console.log("asdfasdlkfj");
+  })
+  //end load notes
 });
