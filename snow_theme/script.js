@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   window.addEventListener('scroll', function(){
     if($(window).scrollTop() > 85){
       $('#header').addClass('doi_mau_header');
