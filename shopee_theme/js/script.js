@@ -48,7 +48,7 @@ $(function () {
         });
     // in post
     var postHtml = `<div class="post_sp_lquan">
-          <a href="../shopee.com/article.html">
+          <a href="../shopee_theme/article.html">
             <div class="main_post_sp_lquan">
             <div class="img_post_sp_lq">
               <img src="https://cf.shopee.vn/file/245fb1d58eb735ec43fae7f1d368e146_tn" alt="">
