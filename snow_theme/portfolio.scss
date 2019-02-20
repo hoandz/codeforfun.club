@@ -76,10 +76,11 @@ body{
           cursor: pointer;
           transition: 0.4s;
           a{
+            transition: 0.4s;
             text-decoration: none;
-            color: black;
+            color: #767676;
             &:hover{
-              color: #ccc;
+              color: black;
             }
             &.doi_mau_menu{
               color: black;

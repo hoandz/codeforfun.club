@@ -70,10 +70,11 @@ body {
           cursor: pointer;
           transition: 0.4s; }
           .header .container .header-right ul li a {
+            transition: 0.4s;
             text-decoration: none;
-            color: black; }
+            color: #767676; }
             .header .container .header-right ul li a:hover {
-              color: #ccc; }
+              color: black; }
             .header .container .header-right ul li a.doi_mau_menu {
               color: black; }
 
