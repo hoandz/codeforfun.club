@@ -1,0 +1,226 @@
+html{
+  height: 100%;
+}
+body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.header{
+  width: 100%;
+  height: 101px;
+  transition: 0.4s;
+  z-index: 1000;
+  &.doi_mau_header{
+    background: white;
+  }
+  .container{
+    width: 1140px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    .header-left{
+      width: 20%;
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+      position: relative;
+      ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        li{
+          list-style: none;
+          display: inline-block;
+          &.logo-trang{
+            display: none;
+          }
+          &.logo-den{
+            display: none;
+          }
+          &.hien_logo{
+            display: inline;
+          }
+          img{
+            width: 85px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .header-right{
+      width: 80%;
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+      position: relative;
+      ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        li{
+          color: white;
+          display: inline-block;
+          list-style: none;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding-left: 14.6px;
+          cursor: pointer;
+          transition: 0.4s;
+          a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+              color: #ccc;
+            }
+            &.doi_mau_menu{
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.content_article_portfolio{
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  background: #f6f6f6;
+  margin-bottom: 100px;
+  .cangiua{
+    width: 1140px;
+    max-width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    .content_article_left{
+      width: 60%;
+      min-height: 200px;
+      overflow: hidden;
+      float: left;
+      padding: 50px 0px;
+    }
+    .content_article_right{
+      width: 40%;
+      min-height: 200px;
+      overflow: hidden;
+      float: left;
+      ul{
+        margin: 0;
+        padding: 110px 40px;
+        li{
+          list-style: none;
+        }
+      }
+    }
+  }
+  .img_article{
+    width: 100%;
+    height: 567px;
+    background-image: url('http://unvab.com/snow-free-html/assets/images/portfolio-4-video-thumb.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .prev_container{
+    width: 100%;
+    height: 100px;
+    background: white;
+    .prev{
+      width: 100%;
+      max-width: 1140px;
+      height: 100px;
+      margin: 0 auto;
+      .prev_left{
+        width: 40%;
+        height: 100%;
+        float: left;
+        ul{
+          margin: 0;
+          padding: 0;
+          li{
+            list-style: none;
+            display: inline;
+            line-height: 100px;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+      }
+      .prev_mid{
+        width: 20%;
+        height: 100%;
+        float: left;
+        position: relative;
+        i{
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%)translateY(-50%);
+          cursor: pointer;
+        }
+      }
+      .prev_right{
+        width: 40%;
+        height: 100%;
+        float: left;
+        ul{
+          margin: 0;
+          padding: 0;
+          float: right;
+          li{
+            list-style: none;
+            display: inline;
+            line-height: 100px;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+}
+.footer{
+  width: 100%;
+  height: 161px;
+  background: #ebebeb;
+  position: absolute;
+  bottom: 0;
+  ul{
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 70px;
+    li{
+      list-style: none;
+      display: inline;
+      padding: 0px 4px;
+      cursor: pointer;
+      i{
+        opacity: 0.5;
+        transition: 0.4s;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  p{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 10px;
+  }
+}

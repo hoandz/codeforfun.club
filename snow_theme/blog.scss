@@ -1,0 +1,252 @@
+html{
+  height: 100%;
+}
+body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.header{
+  width: 100%;
+  height: 101px;
+  transition: 0.4s;
+  z-index: 1000;
+  &.doi_mau_header{
+    background: white;
+  }
+  .container{
+    width: 1140px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    .header-left{
+      width: 20%;
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+      position: relative;
+      ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        li{
+          list-style: none;
+          display: inline-block;
+          &.logo-trang{
+            display: none;
+          }
+          &.logo-den{
+            display: none;
+          }
+          &.hien_logo{
+            display: inline;
+          }
+          img{
+            width: 85px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .header-right{
+      width: 80%;
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+      position: relative;
+      ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        li{
+          color: white;
+          display: inline-block;
+          list-style: none;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding-left: 14.6px;
+          cursor: pointer;
+          transition: 0.4s;
+          a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+              color: #ccc;
+            }
+            &.doi_mau_menu{
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.container_portfolio{
+   width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+  background: #f6f6f6;
+  .icon_large {
+    width: 100%;
+    height: 65px;
+    position: relative;
+    i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 20px;
+      transform: translateX(-50%)translateY(-50%);
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+  .menu_large{
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      margin: 0 auto;
+      height: 50px;
+      text-align: center;
+      li{
+        display: inline;
+        line-height: 50px;
+        margin: 0px 23px;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: 0.4s;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 13px;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .container_blog{
+    width: 730px;
+    max-width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    .post_lates{
+      width: 100%;
+      height: 829px;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,.03);
+      margin-top: 50px;
+      .img_post{
+        width: 100%;
+        height: 395px;
+        background-image: url('http://unvab.com/snow-free-html/assets/images/post-1-mid.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover{
+          opacity: 0.6;
+        }
+        span{
+          background: black;
+          color: white;
+          text-align: center;
+          line-height: 30px;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 0px 20px;
+          bottom: 0;
+          position: absolute;
+          margin: 12px;
+        }
+      }
+      .content_post{
+        width: 100%;
+        height: 434px;
+        padding: 10px 40px;
+        background: white;
+        h2{
+          cursor: pointer;
+          transition: 0.4s;
+          a{
+            text-decoration: none;
+            color: black;
+            transition: 0.4s;
+            &:hover{
+              opacity: 0.6;
+            }
+          }
+        }
+        span{
+          text-transform: uppercase;
+        }
+        p{
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  .load_more{
+    width: 100%;
+    height: 100px;
+    background: white;
+    text-align: center;
+    margin-top: 50px;
+    a{
+      line-height: 100px;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #7f7f7f;
+      transition: 0.4s;
+      text-decoration: none;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: 161px;
+  background: #ebebeb;
+  position: absolute;
+  bottom: 0;
+  ul{
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 70px;
+    li{
+      list-style: none;
+      display: inline;
+      padding: 0px 4px;
+      cursor: pointer;
+      i{
+        opacity: 0.5;
+        transition: 0.4s;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  p{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 10px;
+  }
+}
