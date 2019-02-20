@@ -101,7 +101,7 @@ $(function () {
     // ======= ******* =======
     // post index
     var postIndexHtml = `<div class="post">
-          <a href="../shopee.com/article.html">
+          <a href="../shopee_theme/article.html">
             <div class="main_post">
               <div class="img_sp_main_post">
                 <img src="https://cf.shopee.vn/file/88e8ced847ca970eb830df6df4b846d0_tn" alt="">
