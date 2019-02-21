@@ -58,4 +58,21 @@ $(document).ready(function(){
     body.animate({ scrollTop: 3800}, 1000, 'swing');
   });
   // end xu ly one page
+
+  // Get URL
+  var url = location.href;
+  // Get Destination
+  var url_tokens = url.split('#');
+  if (url_tokens.length == 2) {
+    // Check to go to the destination
+    var dest = url_tokens[1];
+    switch (dest) {
+      case "about":
+        body.animate({ scrollTop: $('.chapter1').offset().top}, 1000, 'swing');
+      break;
+      case "contact":
+        body.animate({ scrollTop: 3800}, 1000, 'swing');
+      break;
+    }
+  }
 });
